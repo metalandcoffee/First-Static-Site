@@ -4,12 +4,15 @@ Variables
 
 ***********************/
 
-$logo-font: 'Lobster', cursive; 
-$header-font: 'Metal Mania', cursive; 
-$body-font: 'Open Sans', sans-serif;
-$coffee-color: #674941;
-$cream-color: #FCFBE3;
-$coffee-light-color: #BEA586;
+$logo-font: 'Lobster',
+cursive;
+$header-font: 'Metal Mania',
+cursive;
+$body-font: 'Open Sans',
+sans-serif;
+$coffee: #674941;
+$cream: #FCFBE3;
+$coffee-light: #BEA586;
 $coffee-cream: #A2825C;
 
 /***********************
@@ -21,8 +24,9 @@ Mixins
 @mixin drop-shade ($spacing, $color) {
     text-shadow: 3px 6px 2px rgba(0, 0, 0, .3);
     letter-spacing: $spacing;
-    color: $color;
+    color: $color !important;
 }
+
 
 /***********************
 
@@ -32,25 +36,33 @@ Typography
 
 body {
     font: 125% $body-font;
-    background-color: $coffee-color;
-    color: $coffee-light-color;
+    background-color: $coffee;
+    color: $coffee-light;
     .nav {
         font-size: 130%;
     }
+    -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3, nav {
+h1,
+h2,
+h3,
+nav {
     font-family: $header-font;
-    @include drop-shade(.1em, $cream-color);
+    @include drop-shade(.1em, $coffee-cream);
     a {
-        color: $cream-color;  
+        color: $cream;
+        letter-spacing: 3px;
     }
 }
 
 .logo {
     font: 300% $logo-font;
-    @include drop-shade(.5em, $coffee-light-color);
+    @include drop-shade(.5em, $coffee-light);
     word-spacing: .25em;
+    vertical-align: middle;
+    line-height: 800px;
+    margin: 0;
 }
 
 /***********************
@@ -60,30 +72,33 @@ Jumbotron
 ***********************/
 
 .jumbo-home {
-    text-align: center;
-    background-color: black;
-    color: $cream-color;
-    h1 {
-        margin-top: 0px;
-    }
-    p {
-        font-family: $body-font;
-        text-shadow: 3px 6px 2px rgba(0, 0, 0, .3);
-    }
-    background: url('../../images/40wattsun.jpg') 50% 40% no-repeat;
+    background-color: $coffee;
+    color: $cream;
+    background: url('../../images/40wattsun.jpg') no-repeat;
     background-size: cover;
+    height: 800px;
+    padding: 0;
+    margin: 0;
+    //    font-smoothing;
+}
+
+.jumbo-overlay {
+    display: block;
+    background-color: rgba(103, 73, 65, .7);
+    height: 100%;
 }
 
 .jumbo-blog {
     text-align: center;
     background-color: black;
     height: 300px;
-    color: $cream-color;
+    color: $cream;
     margin-bottom: 0px;
     background: url('../../images/Vinyl_Days.jpg') 50% 40% no-repeat;
     background-size: cover;
     border-radius: 5px 5px 0 0 !important;
 }
+
 
 /***********************
 
@@ -92,16 +107,13 @@ Blog Post
 ***********************/
 
 .blog-post {
-    background-color: $cream-color;
+    background-color: $cream;
     border-radius: 0 0 5px 5px;
     padding: 0 100px 100px 100px;
     font-size: 170%;
-    color: $coffee-color;
+    color: $coffee;
 }
 
-.blog-content {
-
-}
 
 /***********************
 
@@ -115,6 +127,7 @@ Youtube Video Ordering
     justify-content: space-between;
 }
 
+
 /***********************
 
 About Me Contact Card
@@ -122,11 +135,11 @@ About Me Contact Card
 ***********************/
 
 .contact-card {
-  border: 1px solid $coffee-light-color;
-  border-radius: 5px;
-  margin-top: 88px;
-  padding: 22px 0;
-  text-align: center;
+    border: 1px solid $coffee-light;
+    border-radius: 5px;
+    margin-top: 88px;
+    padding: 22px 0;
+    text-align: center;
     ul {
         list-style-type: none;
     }
@@ -140,10 +153,10 @@ Footer
 ***********************/
 
 .footer {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  margin-top: 40px;
-  border-top: 1px solid #eee;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-top: 40px;
+    border-top: 1px solid #eee;
 }
 
 
@@ -155,7 +168,6 @@ Navigation Bar
 
 .nav-justified {
     padding-bottom: 70px;
-    
     li {
         a {
             padding-top: 15px;
@@ -163,28 +175,28 @@ Navigation Bar
             margin-bottom: 0;
             font-weight: bold;
             text-align: center;
+            font-size: 110%;
         }
     }
-    
     .active {
         a {
             background-color: $coffee-cream;
             background-image: none;
-            box-shadow: inset 0 3px 7px rgba(0,0,0,.15);
+            box-shadow: inset 0 3px 7px rgba(0, 0, 0, .15);
             &:hover {
                 background-color: $coffee-cream;
                 background-image: none;
-                box-shadow: inset 0 3px 7px rgba(0,0,0,.15); 
+                box-shadow: inset 0 3px 7px rgba(0, 0, 0, .15);
             }
-            
             &:focus {
                 background-color: $coffee-cream;
                 background-image: none;
-                box-shadow: inset 0 3px 7px rgba(0,0,0,.15); 
+                box-shadow: inset 0 3px 7px rgba(0, 0, 0, .15);
             }
         }
     }
 }
+
 
 /***********************
 
@@ -193,15 +205,15 @@ Media Queries
 ***********************/
 
 @media (min-width: 768px) {
-  .nav-justified {
-    max-height: 52px;
-  }
-  .nav-justified > li:first-child > a {
-    border-left: 0;
-    border-radius: 5px 0 0 5px;
-  }
-  .nav-justified > li:last-child > a {
-    border-right: 0;
-    border-radius: 0 5px 5px 0;
-  }
+    .nav-justified {
+        max-height: 52px;
+    }
+    .nav-justified > li:first-child > a {
+        border-left: 0;
+        border-radius: 5px 0 0 5px;
+    }
+    .nav-justified > li:last-child > a {
+        border-right: 0;
+        border-radius: 0 5px 5px 0;
+    }
 }

@@ -16,24 +16,35 @@ Typography
 body {
   font: 125% "Open Sans", sans-serif;
   background-color: #674941;
-  color: #BEA586; }
+  color: #BEA586;
+  -webkit-font-smoothing: antialiased; }
   body .nav {
     font-size: 130%; }
 
-h1, h2, h3, nav {
+h1,
+h2,
+h3,
+nav {
   font-family: "Metal Mania", cursive;
   text-shadow: 3px 6px 2px rgba(0, 0, 0, 0.3);
   letter-spacing: 0.1em;
-  color: #FCFBE3; }
-  h1 a, h2 a, h3 a, nav a {
-    color: #FCFBE3; }
+  color: #A2825C !important; }
+  h1 a,
+  h2 a,
+  h3 a,
+  nav a {
+    color: #FCFBE3;
+    letter-spacing: 3px; }
 
 .logo {
   font: 300% "Lobster", cursive;
   text-shadow: 3px 6px 2px rgba(0, 0, 0, 0.3);
   letter-spacing: 0.5em;
-  color: #BEA586;
-  word-spacing: .25em; }
+  color: #BEA586 !important;
+  word-spacing: .25em;
+  vertical-align: middle;
+  line-height: 800px;
+  margin: 0; }
 
 /***********************
 
@@ -41,16 +52,18 @@ Jumbotron
 
 ***********************/
 .jumbo-home {
-  text-align: center;
-  background-color: black;
+  background-color: #674941;
   color: #FCFBE3;
-  background: url("../../images/40wattsun.jpg") 50% 40% no-repeat;
-  background-size: cover; }
-  .jumbo-home h1 {
-    margin-top: 0px; }
-  .jumbo-home p {
-    font-family: "Open Sans", sans-serif;
-    text-shadow: 3px 6px 2px rgba(0, 0, 0, 0.3); }
+  background: url("../../images/40wattsun.jpg") no-repeat;
+  background-size: cover;
+  height: 800px;
+  padding: 0;
+  margin: 0; }
+
+.jumbo-overlay {
+  display: block;
+  background-color: rgba(103, 73, 65, 0.7);
+  height: 100%; }
 
 .jumbo-blog {
   text-align: center;
@@ -121,7 +134,8 @@ Navigation Bar
     padding-bottom: 15px;
     margin-bottom: 0;
     font-weight: bold;
-    text-align: center; }
+    text-align: center;
+    font-size: 110%; }
   .nav-justified .active a {
     background-color: #A2825C;
     background-image: none;
