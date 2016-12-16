@@ -37,6 +37,8 @@ Typography
 body {
     font: 125% $body-font;
     background-color: $coffee;
+    background-image: url(../../images/coffee.jpg);
+    background-size: 70%;
     color: $coffee-light;
     .nav {
         font-size: 130%;
@@ -67,6 +69,20 @@ nav {
 
 /***********************
 
+Backgrounds
+
+***********************/
+
+body {
+    background-image: url(../../images/coffee.jpg);
+}
+
+.body-color-overlay {
+    background-color: rgba(103, 73, 65, .95);
+}
+
+/***********************
+
 Jumbotron
 
 ***********************/
@@ -91,15 +107,23 @@ Jumbotron
 .jumbo-blog {
     text-align: center;
     background-color: black;
+    background: url('../../images/Vinyl_Days.jpg') 50% 40% no-repeat;
     height: 300px;
     color: $cream;
-    margin-bottom: 0px;
-    background: url('../../images/Vinyl_Days.jpg') 50% 40% no-repeat;
+    margin-bottom: 0;
     background-size: cover;
     border-radius: 5px 5px 0 0 !important;
 }
 
+/***********************
 
+Radio
+
+***********************/
+
+.feature-section {
+    min-height: 500px;
+}
 /***********************
 
 Blog Post
