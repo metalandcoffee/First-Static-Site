@@ -4,14 +4,14 @@ Variables
 
 ***********************/
 
-$logo-font: 'Lobster',
+$font-main: 'Lobster',
 cursive;
 $header-font: 'Metal Mania',
 cursive;
 $body-font: 'Open Sans',
 sans-serif;
 $coffee: #674941;
-$cream: #FCFBE3;
+$cream: #fffef7;
 $coffee-light: #BEA586;
 $coffee-cream: #A2825C;
 
@@ -36,9 +36,7 @@ Typography
 
 body {
     font: 125% $body-font;
-    background-color: $coffee;
-    background-image: url(../../images/coffee.jpg);
-    background-size: 70%;
+    background-color: $cream;
     color: $coffee-light;
     .nav {
         font-size: 130%;
@@ -50,7 +48,7 @@ h1,
 h2,
 h3,
 nav {
-    font-family: $header-font;
+    font-family: $font-main;
     @include drop-shade(.1em, $coffee-cream);
     a {
         color: $cream;
@@ -59,12 +57,12 @@ nav {
 }
 
 .logo {
-    font: 300% $logo-font;
+    font: 300% $font-main;
     @include drop-shade(.5em, $coffee-light);
     word-spacing: .25em;
     vertical-align: middle;
-    line-height: 800px;
-    margin: 0;
+//    line-height: 800px;
+    margin-top: 40%;
 }
 
 /***********************
@@ -74,11 +72,11 @@ Backgrounds
 ***********************/
 
 body {
-    background-image: url(../../images/coffee.jpg);
+//    background-image: url(../../images/coffee.jpg);
 }
 
 .body-color-overlay {
-    background-color: rgba(103, 73, 65, .95);
+//    background-color: rgba(103, 73, 65, .95);
 }
 
 /***********************
@@ -122,8 +120,27 @@ Radio
 ***********************/
 
 .feature-section {
-    min-height: 500px;
+  min-height: 500px;
+//  min-width: 960px;
+//  padding: 66px 0 44px 0;
 }
+
+.sotw-section {
+//  display: inline-block;
+//  width: 50%;
+//  min-height: 500px;
+  background-image: url('../../images/Vinyl_Days.jpg');
+    background-size: cover;
+}
+
+.sotw-overlay {
+    background-color: rgba(255, 254, 247, .75);
+}
+
+.alt-section {
+      background: #000;
+}
+
 /***********************
 
 Blog Post
