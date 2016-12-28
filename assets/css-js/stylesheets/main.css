@@ -92,7 +92,8 @@ Radio
   background-size: cover; }
 
 .sotw-overlay {
-  background-color: rgba(255, 254, 247, 0.75); }
+  background-color: rgba(255, 254, 247, 0.75);
+  min-height: 500px; }
 
 .alt-section {
   background: #000; }

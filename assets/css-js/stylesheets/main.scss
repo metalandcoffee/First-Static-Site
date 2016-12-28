@@ -121,20 +121,19 @@ Radio
 
 .feature-section {
   min-height: 500px;
-//  min-width: 960px;
-//  padding: 66px 0 44px 0;
 }
 
 .sotw-section {
 //  display: inline-block;
 //  width: 50%;
-//  min-height: 500px;
+  
   background-image: url('../../images/Vinyl_Days.jpg');
     background-size: cover;
 }
 
 .sotw-overlay {
     background-color: rgba(255, 254, 247, .75);
+    min-height: 500px;
 }
 
 .alt-section {
