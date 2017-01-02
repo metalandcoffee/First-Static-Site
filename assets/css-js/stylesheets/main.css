@@ -14,9 +14,9 @@ Typography
 
 ***********************/
 body {
-  font: 125% "Open Sans", sans-serif;
+  font: 125% "Raleway", sans-serif;
   background-color: #fffef7;
-  color: #BEA586;
+  color: #674941;
   -webkit-font-smoothing: antialiased; }
   body .nav {
     font-size: 130%; }
@@ -28,7 +28,7 @@ nav {
   font-family: "Lobster", cursive;
   text-shadow: 3px 6px 2px rgba(0, 0, 0, 0.3);
   letter-spacing: 0.1em;
-  color: #A2825C !important; }
+  color: #674941; }
   h1 a,
   h2 a,
   h3 a,
@@ -40,16 +40,12 @@ nav {
   font: 300% "Lobster", cursive;
   text-shadow: 3px 6px 2px rgba(0, 0, 0, 0.3);
   letter-spacing: 0.5em;
+  color: #BEA586;
   color: #BEA586 !important;
   word-spacing: .25em;
   vertical-align: middle;
   margin-top: 40%; }
 
-/***********************
-
-Backgrounds
-
-***********************/
 /***********************
 
 Jumbotron
@@ -98,6 +94,14 @@ Radio
 .alt-section {
   background: #000; }
 
+.playlist {
+  background-color: #25292c;
+  max-height: 150px;
+  overflow: scroll; }
+
+iframe {
+  vertical-align: bottom; }
+
 /***********************
 
 Blog Post
@@ -115,10 +119,18 @@ Blog Post
 Youtube Video Ordering
 
 ***********************/
-.video-container {
+.flex-container {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between; }
+  justify-content: space-between;
+  padding: 0 10px 10px 10px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0; }
+
+.social-icons {
+  position: relative; }
 
 /***********************
 
@@ -151,8 +163,14 @@ Navigation Bar
 
 ***********************/
 .nav-justified {
-  padding-bottom: 70px; }
-  .nav-justified li a {
+  padding-bottom: 70px;
+  background: -moz-linear-gradient(top, #674941 0%, rgba(103, 73, 65, 0) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #674941 0%, rgba(103, 73, 65, 0) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #674941 0%, rgba(103, 73, 65, 0) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
+  .nav-justified copy li a {
     padding-top: 15px;
     padding-bottom: 15px;
     margin-bottom: 0;

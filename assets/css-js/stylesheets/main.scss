@@ -8,7 +8,7 @@ $font-main: 'Lobster',
 cursive;
 $header-font: 'Metal Mania',
 cursive;
-$body-font: 'Open Sans',
+$body-font: 'Raleway',
 sans-serif;
 $coffee: #674941;
 $cream: #fffef7;
@@ -24,7 +24,7 @@ Mixins
 @mixin drop-shade ($spacing, $color) {
     text-shadow: 3px 6px 2px rgba(0, 0, 0, .3);
     letter-spacing: $spacing;
-    color: $color !important;
+    color: $color;
 }
 
 
@@ -37,7 +37,7 @@ Typography
 body {
     font: 125% $body-font;
     background-color: $cream;
-    color: $coffee-light;
+    color: $coffee;
     .nav {
         font-size: 130%;
     }
@@ -49,7 +49,7 @@ h2,
 h3,
 nav {
     font-family: $font-main;
-    @include drop-shade(.1em, $coffee-cream);
+    @include drop-shade(.1em, $coffee);
     a {
         color: $cream;
         letter-spacing: 3px;
@@ -59,25 +59,12 @@ nav {
 .logo {
     font: 300% $font-main;
     @include drop-shade(.5em, $coffee-light);
+    color: $coffee-light !important;
     word-spacing: .25em;
     vertical-align: middle;
-//    line-height: 800px;
     margin-top: 40%;
 }
 
-/***********************
-
-Backgrounds
-
-***********************/
-
-body {
-//    background-image: url(../../images/coffee.jpg);
-}
-
-.body-color-overlay {
-//    background-color: rgba(103, 73, 65, .95);
-}
 
 /***********************
 
@@ -113,6 +100,7 @@ Jumbotron
     border-radius: 5px 5px 0 0 !important;
 }
 
+
 /***********************
 
 Radio
@@ -120,14 +108,13 @@ Radio
 ***********************/
 
 .feature-section {
-  min-height: 500px;
+    min-height: 500px;
 }
 
 .sotw-section {
-//  display: inline-block;
-//  width: 50%;
-  
-  background-image: url('../../images/Vinyl_Days.jpg');
+    //  display: inline-block;
+    //  width: 50%;
+    background-image: url('../../images/Vinyl_Days.jpg');
     background-size: cover;
 }
 
@@ -137,8 +124,19 @@ Radio
 }
 
 .alt-section {
-      background: #000;
+    background: #000;
 }
+
+.playlist {
+    background-color: #25292c;
+    max-height: 150px;
+    overflow: scroll;
+}
+
+iframe {
+    vertical-align: bottom;
+}
+
 
 /***********************
 
@@ -161,10 +159,19 @@ Youtube Video Ordering
 
 ***********************/
 
-.video-container {
+.flex-container {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+    padding: 0 10px 10px 10px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.social-icons {
+    position: relative;
 }
 
 
@@ -208,7 +215,13 @@ Navigation Bar
 
 .nav-justified {
     padding-bottom: 70px;
-    li {
+    background: -moz-linear-gradient(top, rgba(103, 73, 65, 1) 0%, rgba(103, 73, 65, 0) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(103, 73, 65, 1) 0%, rgba(103, 73, 65, 0) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(103, 73, 65, 1) 0%, rgba(103, 73, 65, 0) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    copy li {
         a {
             padding-top: 15px;
             padding-bottom: 15px;
