@@ -14,12 +14,10 @@ Typography
 
 ***********************/
 body {
-  font: 125% "Raleway", sans-serif;
+  font: 150% "Raleway", sans-serif;
   background-color: #fffef7;
   color: #674941;
   -webkit-font-smoothing: antialiased; }
-  body .nav {
-    font-size: 130%; }
 
 h1,
 h2,
@@ -44,7 +42,7 @@ nav {
   color: #BEA586 !important;
   word-spacing: .25em;
   vertical-align: middle;
-  margin-top: 40%; }
+  margin-top: 30%; }
 
 /***********************
 
@@ -75,6 +73,9 @@ Jumbotron
   background-size: cover;
   border-radius: 5px 5px 0 0 !important; }
 
+img[src$=".svg"] {
+  width: 50%; }
+
 /***********************
 
 Radio
@@ -88,11 +89,14 @@ Radio
   background-size: cover; }
 
 .sotw-overlay {
-  background-color: rgba(255, 254, 247, 0.75);
-  min-height: 500px; }
+  background-color: rgba(255, 254, 247, 0.75); }
 
-.alt-section {
-  background: #000; }
+.yt-section {
+  background-image: url("../../images/coffee2.jpg");
+  background-size: contain; }
+
+.yt-overlay {
+  background-color: rgba(103, 73, 65, 0.9); }
 
 .playlist {
   background-color: #25292c;
@@ -101,6 +105,23 @@ Radio
 
 iframe {
   vertical-align: bottom; }
+
+.archive-btn {
+  text-shadow: 1px 1px 3px #666666;
+  font-family: "Lobster", cursive;
+  color: #674941;
+  font-size: 20px;
+  padding: 10px 30px 10px 30px;
+  border: solid #674941 2px;
+  text-decoration: none;
+  background: none;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+.archive-btn:hover {
+  background-color: rgba(103, 73, 65, 0.5);
+  color: #fffef7;
+  text-decoration: none; }
 
 /***********************
 

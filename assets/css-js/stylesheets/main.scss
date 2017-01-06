@@ -35,12 +35,9 @@ Typography
 ***********************/
 
 body {
-    font: 125% $body-font;
+    font: 150% $body-font;
     background-color: $cream;
     color: $coffee;
-    .nav {
-        font-size: 130%;
-    }
     -webkit-font-smoothing: antialiased;
 }
 
@@ -62,7 +59,7 @@ nav {
     color: $coffee-light !important;
     word-spacing: .25em;
     vertical-align: middle;
-    margin-top: 40%;
+    margin-top: 30%;
 }
 
 
@@ -100,6 +97,10 @@ Jumbotron
     border-radius: 5px 5px 0 0 !important;
 }
 
+img[src$=".svg"] {
+    width: 50%;
+}
+
 
 /***********************
 
@@ -112,19 +113,21 @@ Radio
 }
 
 .sotw-section {
-    //  display: inline-block;
-    //  width: 50%;
     background-image: url('../../images/Vinyl_Days.jpg');
     background-size: cover;
 }
 
 .sotw-overlay {
     background-color: rgba(255, 254, 247, .75);
-    min-height: 500px;
 }
 
-.alt-section {
-    background: #000;
+.yt-section {
+    background-image: url('../../images/coffee2.jpg');
+    background-size: contain;
+}
+
+.yt-overlay {
+        background-color: rgba(103, 73, 65, .9);
 }
 
 .playlist {
@@ -135,6 +138,25 @@ Radio
 
 iframe {
     vertical-align: bottom;
+}
+
+.archive-btn {
+    text-shadow: 1px 1px 3px #666666;
+    font-family: $font-main;
+    color: $coffee;
+    font-size: 20px;
+    padding: 10px 30px 10px 30px;
+    border: solid $coffee 2px;
+    text-decoration: none;
+    background: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.archive-btn:hover {
+    background-color: rgba(103, 73, 65, .5);
+    color: $cream;
+    text-decoration: none;
 }
 
 
