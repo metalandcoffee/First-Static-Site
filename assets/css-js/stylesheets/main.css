@@ -10,6 +10,15 @@ Mixins
 ***********************/
 /***********************
 
+General
+
+***********************/
+.container {
+  padding-top: 100px;
+  padding-bottom: 100px; }
+
+/***********************
+
 Typography
 
 ***********************/
@@ -73,6 +82,10 @@ Jumbotron
   background-size: cover;
   border-radius: 5px 5px 0 0 !important; }
 
+.nav > li > a:focus, .nav > li > a:hover {
+  background-color: transparent;
+  color: #BEA586; }
+
 img[src$=".svg"] {
   width: 50%; }
 
@@ -89,14 +102,20 @@ Radio
   background-size: cover; }
 
 .sotw-overlay {
-  background-color: rgba(255, 254, 247, 0.75); }
+  background-color: rgba(255, 254, 247, 0.95); }
 
 .yt-section {
   background-image: url("../../images/coffee2.jpg");
-  background-size: contain; }
+  background-size: contain;
+  color: #fffef7; }
 
 .yt-overlay {
-  background-color: rgba(103, 73, 65, 0.9); }
+  background-color: rgba(103, 73, 65, 0.95); }
+
+.yt-header {
+  text-shadow: 3px 6px 2px rgba(0, 0, 0, 0.3);
+  letter-spacing: 0.1em;
+  color: #fffef7; }
 
 .playlist {
   background-color: #25292c;
@@ -121,6 +140,9 @@ iframe {
 .archive-btn:hover {
   background-color: rgba(103, 73, 65, 0.5);
   color: #fffef7;
+  text-decoration: none; }
+
+.archive-lnk:hover {
   text-decoration: none; }
 
 /***********************
