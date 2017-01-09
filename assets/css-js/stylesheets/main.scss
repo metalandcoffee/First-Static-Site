@@ -35,8 +35,8 @@ General
 ***********************/
 
 .container {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 
@@ -72,6 +72,11 @@ nav {
     word-spacing: .25em;
     vertical-align: middle;
     margin-top: 30%;
+}
+
+.intro-header {
+        @include drop-shade(.1em, $cream);
+        margin: 100px auto;
 }
 
 
@@ -118,10 +123,53 @@ img[src$=".svg"] {
     width: 50%;
 }
 
+/***********************
+
+Coffee Section
+
+***********************/
+
+.coffee-section {
+    background: url('../../images/coffee.jpg');
+    background-size: cover;
+    background-position: center;
+    color: $cream;
+}
+
+.coffee-overlay {
+        background-color: rgba(103, 73, 65, .95);
+}
+
+.coffee-header {
+        @include drop-shade(.1em, $cream);
+}
+
+.c-archive-btn {
+    text-shadow: 1px 1px 3px #666666;
+    font-family: $font-main;
+    color: $cream;
+    font-size: 20px;
+    padding: 10px 30px 10px 30px;
+    border: solid $cream 3px;
+    text-decoration: none;
+    background: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.c-archive-btn:hover {
+    background-color: rgba(255, 254, 247, .5);
+    color: $coffee;
+    text-decoration: none;
+}
+
+.c-archive-lnk:hover {
+    text-decoration: none;
+}
 
 /***********************
 
-Radio
+Cream Section
 
 ***********************/
 
@@ -168,7 +216,7 @@ iframe {
     color: $coffee;
     font-size: 20px;
     padding: 10px 30px 10px 30px;
-    border: solid $coffee 2px;
+    border: solid $coffee 3px;
     text-decoration: none;
     background: none;
     margin-top: 20px;
