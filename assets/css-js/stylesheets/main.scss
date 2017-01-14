@@ -65,6 +65,14 @@ nav {
     }
 }
 
+h4 {
+    margin-top: 20px;
+}
+
+p.excerpt {
+    font-size: 125%;
+}
+
 .logo {
     font: 300% $font-main;
     @include drop-shade(.5em, $coffee-light);
