@@ -33,7 +33,7 @@ h2,
 h3,
 nav {
   font-family: "Lobster", cursive;
-  text-shadow: 3px 6px 2px rgba(0, 0, 0, 0.3);
+  text-shadow: 3px 6px 2px rgba(0, 0, 0, 0.5);
   letter-spacing: 0.1em;
   color: #674941; }
   h1 a,
@@ -51,7 +51,7 @@ p.excerpt {
 
 .logo {
   font: 300% "Lobster", cursive;
-  text-shadow: 3px 6px 2px rgba(0, 0, 0, 0.3);
+  text-shadow: 3px 6px 2px rgba(0, 0, 0, 0.5);
   letter-spacing: 0.5em;
   color: #BEA586;
   color: #BEA586 !important;
@@ -60,10 +60,9 @@ p.excerpt {
   margin-top: 30%; }
 
 .intro-header {
-  text-shadow: 3px 6px 2px rgba(0, 0, 0, 0.3);
+  text-shadow: 3px 6px 2px rgba(0, 0, 0, 0.5);
   letter-spacing: 0.1em;
-  color: #fffef7;
-  margin: 100px auto; }
+  color: #fffef7; }
 
 /***********************
 
@@ -81,7 +80,7 @@ Jumbotron
 
 .jumbo-overlay {
   display: block;
-  background-color: rgba(103, 73, 65, 0.7);
+  background-color: rgba(103, 73, 65, 0.6);
   height: 100%; }
 
 .jumbo-blog {
@@ -94,7 +93,8 @@ Jumbotron
   background-size: cover;
   border-radius: 5px 5px 0 0 !important; }
 
-.nav > li > a:focus, .nav > li > a:hover {
+.nav > li > a:focus,
+.nav > li > a:hover {
   background-color: transparent;
   color: #BEA586; }
 
@@ -106,6 +106,9 @@ img[src$=".svg"] {
 Coffee Section
 
 ***********************/
+.feature-section {
+  min-height: 500px; }
+
 .coffee-section {
   background: url("../../images/coffee.jpg");
   background-size: cover;
@@ -113,10 +116,12 @@ Coffee Section
   color: #fffef7; }
 
 .coffee-overlay {
-  background-color: rgba(103, 73, 65, 0.95); }
+  display: block;
+  background-color: rgba(103, 73, 65, 0.95);
+  height: 100%; }
 
 .coffee-header {
-  text-shadow: 3px 6px 2px rgba(0, 0, 0, 0.3);
+  text-shadow: 3px 6px 2px rgba(0, 0, 0, 0.5);
   letter-spacing: 0.1em;
   color: #fffef7; }
 
@@ -145,9 +150,6 @@ Coffee Section
 Cream Section
 
 ***********************/
-.feature-section {
-  min-height: 500px; }
-
 .sotw-section {
   background-image: url("../../images/Vinyl_Days.jpg");
   background-size: cover; }
@@ -164,7 +166,7 @@ Cream Section
   background-color: rgba(103, 73, 65, 0.95); }
 
 .yt-header {
-  text-shadow: 3px 6px 2px rgba(0, 0, 0, 0.3);
+  text-shadow: 3px 6px 2px rgba(0, 0, 0, 0.5);
   letter-spacing: 0.1em;
   color: #fffef7; }
 
