@@ -59,9 +59,11 @@ h3,
 nav {
     font-family: $font-main;
     @include drop-shade(.1em, $coffee);
+    text-shadow: 3px 0px 17px rgba(255, 254, 247, 1);
     a {
         color: $cream;
         letter-spacing: 3px;
+        text-shadow: 3px 6px 2px rgba(0, 0, 0, .5);
     }
 }
 
@@ -76,7 +78,8 @@ p.excerpt {
 .logo {
     font: 300% $font-main;
     @include drop-shade(.5em, $coffee-light);
-    color: $coffee-light !important;
+    text-shadow: 3px 0px 17px rgba(255, 254, 247, 1);
+    color: $coffee !important;
     word-spacing: .25em;
     vertical-align: middle;
 }

@@ -35,13 +35,15 @@ nav {
   font-family: "Lobster", cursive;
   text-shadow: 3px 6px 2px rgba(0, 0, 0, 0.5);
   letter-spacing: 0.1em;
-  color: #674941; }
+  color: #674941;
+  text-shadow: 3px 0px 17px #fffef7; }
   h1 a,
   h2 a,
   h3 a,
   nav a {
     color: #fffef7;
-    letter-spacing: 3px; }
+    letter-spacing: 3px;
+    text-shadow: 3px 6px 2px rgba(0, 0, 0, 0.5); }
 
 h4 {
   margin-top: 20px; }
@@ -54,7 +56,8 @@ p.excerpt {
   text-shadow: 3px 6px 2px rgba(0, 0, 0, 0.5);
   letter-spacing: 0.5em;
   color: #BEA586;
-  color: #BEA586 !important;
+  text-shadow: 3px 0px 17px #fffef7;
+  color: #674941 !important;
   word-spacing: .25em;
   vertical-align: middle; }
 
