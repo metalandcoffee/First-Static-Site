@@ -12,6 +12,7 @@
     <title>Metal & Coffee - Home</title>
     <!-- Bootstrap core CSS -->
     <link href="assets/css-js/bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css-js/font-awesome/css/font-awesome.css" rel="stylesheet">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lobster|Metal+Mania|Open+Sans:300|Raleway:500" rel="stylesheet">
     <!-- Custom styles for Metal & Coffee -->
@@ -22,11 +23,10 @@
     <div class="jumbotron jumbo-home">
         <!-- Color Overlay -->
         <div class="jumbo-overlay social-icons">
-            <div class="container">
-                <!-- The justified navigation menu is meant for single line per list item. -->
+                           <!-- The justified navigation menu is meant for single line per list item. -->
                 <div class="masthead">
                     <nav>
-                        <ul class="nav nav-justified navbar-fixed-top">
+                        <ul class="nav nav-justified">
                             <li><a href="#">Home</a></li>
                             <li><a href="#">Radio</a></li>
                             <li><a href="#">Videos</a></li>
@@ -37,15 +37,17 @@
                         </ul>
                     </nav>
                 </div>
+            <div class="container">
+
                 <!-- Logo -->
                 <h1 class="logo text-center">Metal & Coffee</h1>
                 <h3 class="text-center">How do you like your metal?</h3> </div>
           
             <div class="flex-container">
-                <a href="#"> <img src="assets/images/facebook.svg" alt="Facebook" /> </a>
-                <a href="#"><img src="assets/images/twitter.svg" alt="Twitter" /> </a>
-                <a href="#"><img src="assets/images/instagram.svg" alt="Instagram" /></a>
-                <a href="#"><img src="assets/images/youtube.svg" width="44" alt="Youtube" /></a>
+                <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+                <i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
+                <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+                <i class="fa fa-youtube-play fa-2x" aria-hidden="true"></i>
             </div>
 </div>
         <!-- Color Overlay End -->
@@ -165,11 +167,23 @@
             <div class="text-center container">
                 <h2 class="coffee-header">Videos</h2>
                 <p>Posted: Jan 2nd 2017</p>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/Hhz2M_hNlec" frameborder="0" allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/9PnKPiL70iY" frameborder="0" allowfullscreen></iframe>
+                <div class="row">
+
+                <div class="col-sm-6">
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Hhz2M_hNlec" allowfullscreen></iframe>
+</div>
+                </div>
+                <div class="col-sm-6">
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/9PnKPiL70iY" allowfullscreen></iframe>
+</div>
+                    </div>
+
                 <a class="c-archive-lnk" href="http://www.youtube.com/user/theebonieiscool" target="_blank">
                     <button class="center-block c-archive-btn">More...</button>
                 </a>
+                </div>
             </div>
         </div>
     </div>

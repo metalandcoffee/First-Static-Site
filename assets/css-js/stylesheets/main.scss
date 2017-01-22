@@ -79,7 +79,6 @@ p.excerpt {
     color: $coffee-light !important;
     word-spacing: .25em;
     vertical-align: middle;
-    margin-top: 30%;
 }
 
 .intro-header {
@@ -378,5 +377,9 @@ Media Queries
     .nav-justified > li:last-child > a {
         border-right: 0;
         border-radius: 0 5px 5px 0;
+    }
+    .jumbotron .h1,
+    .jumbotron h1 {
+        margin-top: 25%;
     }
 }
