@@ -95,6 +95,9 @@ Jumbotron
   background-size: cover;
   border-radius: 5px 5px 0 0 !important; }
 
+.jumbo-radio {
+  height: 400px; }
+
 .nav > li > a:focus,
 .nav > li > a:hover {
   background-color: transparent;
@@ -172,10 +175,14 @@ Cream Section
   letter-spacing: 0.1em;
   color: #fffef7; }
 
-.playlist {
-  background-color: #25292c;
-  max-height: 150px;
-  overflow: scroll; }
+.playlist-archive {
+  max-height: 120px;
+  overflow: scroll;
+  border-top: 1px solid #d7d7d7;
+  border-bottom: 1px solid #d7d7d7; }
+
+.playlist-main {
+  max-height: 200px; }
 
 iframe {
   vertical-align: bottom; }
@@ -305,8 +312,7 @@ Media Queries
     border-right: 0;
     border-radius: 0 5px 5px 0; }
 
-  .jumbotron .h1,
-  .jumbotron h1 {
+  .logo-home {
     margin-top: 25%; } }
 
 /*# sourceMappingURL=main.css.map */
