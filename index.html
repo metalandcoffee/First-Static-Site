@@ -28,12 +28,18 @@
                 <nav>
                     <ul class="nav nav-justified">
                         <li class="active"><a href="index.html">Home</a></li>
-                        <li><a href="radio.html">Radio</a></li>
-                        <li><a href="#">Videos</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">MC-Approved Shows</a></li>
-                        <li><a href="#">The MC</a></li>
-                        <li><a href="#">Search</a></li>
+                        <li><a href="#radio">Radio</a></li>
+                        <li><a href="#videos">Videos</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#shows">MC-Approved Shows</a></li>
+                        <li><a href="#about">The MC</a></li>
+                        <li>
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Search for..."> <span class="input-group-btn">
+        <button class="btn btn-default" type="button">Go!</button>
+      </span> </div>
+                            <!-- /input-group -->
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -55,14 +61,14 @@
     </div>
     <div class="sotw-section">
         <div class="sotw-overlay feature-section">
-            <div class="container">
+            <div class="container" id="radio">
                 <div class="row">
                     <div class="col-sm-7">
                         <h2>Radio</h2>
                         <p>Last Updated: Jan 2nd 2017</p>
-<iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?feed=https%3A%2F%2Fwww.mixcloud.com%2Fmetalandcoffee%2Ffebruary-5th-2017-artist-spotlight-soen%2F&hide_cover=1&light=1" frameborder="0"></iframe>
+                        <iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?feed=https%3A%2F%2Fwww.mixcloud.com%2Fmetalandcoffee%2Ffebruary-5th-2017-artist-spotlight-soen%2F&hide_cover=1&light=1" frameborder="0"></iframe>
                         <div class="playlist-archive playlist-main">
-                            <table class="table">
+                            <table class="table" id="table1">
                                 <thead>
                                     <tr class="numbered">
                                         <th>Artist</th>
@@ -137,7 +143,7 @@
                                 </tbody>
                             </table>
                         </div>
-                        <a class="archive-lnk" href="#">
+                        <a class="archive-lnk" href="radio.html">
                             <button class="center-block archive-btn">More...</button>
                         </a>
                     </div>
@@ -155,7 +161,7 @@
     </div>
     <div class="coffee-section">
         <div class="coffee-overlay feature-section">
-            <div class="text-center container">
+            <div class="text-center container" id="videos">
                 <h2 class="coffee-header">Videos</h2>
                 <p>Posted: Jan 2nd 2017</p>
                 <div class="row">
@@ -177,7 +183,7 @@
         </div>
     </div>
     <div class="feature-section">
-        <div class="container">
+        <div class="container" id="blog">
             <h2 class="text-center">Blog</h2>
             <p>*need to make blog image responsive*</p>
             <div class="row">
@@ -197,7 +203,7 @@
     </div>
     <div class="coffee-section">
         <div class="coffee-overlay feature-section">
-            <div class="container">
+            <div class="container" id="shows">
                 <h2 class="text-center coffee-header">Metal & Coffee Recommended Live Shows</h2>
                 <div class="row">
                     <table class="table">
@@ -253,7 +259,7 @@
         </div>
     </div>
     <div class="feature-section">
-        <div class="container">
+        <div class="container" id="about">
             <h1 class="text-center">The MC</h1>
             <div class="row">
                 <div class="col-sm-4"><img src="assets/images/author.jpg" alt="Metal & Coffee Creator" class="img-responsive img-thumbnail"></div>
