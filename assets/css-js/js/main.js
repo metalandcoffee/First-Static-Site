@@ -1,4 +1,8 @@
 $(function () {
+  $('[data-toggle="popover"]').popover()
+})
+
+$(function () {
     $('[id^="table"]').each(function () {
         var i = 0;
         var tableH = '#' + this.id + ' thead tr.numbered';

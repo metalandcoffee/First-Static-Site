@@ -316,6 +316,9 @@ Media Queries
     border-radius: 0 5px 5px 0; }
 
   .logo-home {
-    margin-top: 25%; } }
+    margin-top: 25%; }
+
+  .search-box {
+    width: 200px; } }
 
 /*# sourceMappingURL=main.css.map */
