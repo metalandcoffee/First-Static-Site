@@ -103,9 +103,6 @@ Jumbotron
   background-color: transparent;
   color: #BEA586; }
 
-img[src$=".svg"] {
-  width: 50%; }
-
 /***********************
 
 Coffee Section
@@ -175,9 +172,6 @@ Cream Section
   letter-spacing: 0.1em;
   color: #fffef7; }
 
-.radio-section {
-  margin-bottom: 30px; }
-
 .playlist-archive {
   max-height: 120px;
   overflow: scroll;
@@ -209,6 +203,17 @@ iframe {
 
 .archive-lnk:hover {
   text-decoration: none; }
+
+/***********************
+
+Search
+
+***********************/
+.listing-section {
+  margin-bottom: 30px; }
+
+.hl {
+  background-image: linear-gradient(-100deg, rgba(255, 255, 255, 0), yellow 85%, rgba(255, 255, 255, 0)); }
 
 /***********************
 
