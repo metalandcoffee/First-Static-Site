@@ -98,6 +98,9 @@ Jumbotron
 .jumbo-radio {
   height: 400px; }
 
+.jumbo-blog {
+  height: 50px; }
+
 .nav > li > a:focus,
 .nav > li > a:hover {
   background-color: transparent;
