@@ -112,17 +112,6 @@ Jumbotron
     height: 100%;
 }
 
-.jumbo-blog {
-    text-align: center;
-    background-color: black;
-    background: url('../../images/Vinyl_Days.jpg') 50% 40% no-repeat;
-    height: 300px;
-    color: $cream;
-    margin-bottom: 0;
-    background-size: cover;
-    border-radius: 5px 5px 0 0 !important;
-}
-
 .jumbo-radio {
     height: 400px;
 }
@@ -135,6 +124,21 @@ Jumbotron
 .nav > li > a:hover {
     background-color: rgba(0, 0, 0, 0);
     color: $coffee-light;
+}
+
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 0 10px 10px 10px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.social-icons {
+    position: relative;
 }
 
 
@@ -220,7 +224,6 @@ Cream Section
     $cream);
 }
 
-
 .playlist-archive {
     max-height: 120px;
     overflow: scroll;
@@ -259,6 +262,7 @@ iframe {
     text-decoration: none;
 }
 
+
 /***********************
 
 Search
@@ -270,14 +274,21 @@ Search
 }
 
 .hl {
-background-image: linear-gradient(-100deg, rgba(255, 255, 255, 0), yellow 85%, rgba(255, 255, 255, 0));
+    background-image: linear-gradient(-100deg, rgba(255, 255, 255, 0), yellow 85%, rgba(255, 255, 255, 0));
 }
+
 
 /***********************
 
-Blog Post
+Blog
 
 ***********************/
+
+.blog-thumbnail {
+    background: #333333;
+    height: 200px;
+    width: 290px;
+}
 
 .blog-post {
     background-color: $cream;
@@ -287,27 +298,66 @@ Blog Post
     color: $coffee;
 }
 
+.blog-carousel {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+.blog-image {
+    height: 400px;
+    background-image: url('../../images/Soen.jpg');
+    background-size: cover;
+    border-top-left-radius: 5px; 
+           border-top-right-radius: 5px; 
+}
+
+.blog-content {
+    padding: 70px 120px;
+    height: 400px;
+    background-color: #FFFFFF;
+    border-bottom-left-radius: 5px; 
+           border-bottom-right-radius: 5px; 
+    
+    h1 {
+        margin-top: 0;
+    }
+    p {
+        font-size: 125%;
+        padding-bottom: 20px;
+    }
+}
+
+.blog-thumbnail-1 {
+    background-image: url('../../images/code_orange_forever.jpg');
+    background-size: cover;
+    color: $cream;
+}
+
+.blog-thumbnail-2 {
+    background-image: url('../../images/Oceans_of_Slumber_Winter.jpg');
+    background-size: cover;
+    color: $cream;
+}
+
+.blog-thumbnail-3 {
+    background-image: url('../../images/pain_of_salvation_scarsick.jpg');
+    background-size: cover;
+    color: $cream;
+}
+
+.blog-thumbnail-4 {
+    background-image: url('../../images/Vinyl_Days.jpg');
+    background-size: cover;
+    color: $cream;
+}
+
 
 /***********************
 
 Youtube Video Ordering
 
 ***********************/
-
-.flex-container {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    padding: 0 10px 10px 10px;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
-
-.social-icons {
-    position: relative;
-}
 
 
 /***********************

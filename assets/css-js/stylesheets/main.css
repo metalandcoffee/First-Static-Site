@@ -85,16 +85,6 @@ Jumbotron
   background-color: rgba(103, 73, 65, 0.6);
   height: 100%; }
 
-.jumbo-blog {
-  text-align: center;
-  background-color: black;
-  background: url("../../images/Vinyl_Days.jpg") 50% 40% no-repeat;
-  height: 300px;
-  color: #fffef7;
-  margin-bottom: 0;
-  background-size: cover;
-  border-radius: 5px 5px 0 0 !important; }
-
 .jumbo-radio {
   height: 400px; }
 
@@ -105,6 +95,19 @@ Jumbotron
 .nav > li > a:hover {
   background-color: transparent;
   color: #BEA586; }
+
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 0 10px 10px 10px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0; }
+
+.social-icons {
+  position: relative; }
 
 /***********************
 
@@ -220,9 +223,14 @@ Search
 
 /***********************
 
-Blog Post
+Blog
 
 ***********************/
+.blog-thumbnail {
+  background: #333333;
+  height: 200px;
+  width: 290px; }
+
 .blog-post {
   background-color: #fffef7;
   border-radius: 0 0 5px 5px;
@@ -230,24 +238,55 @@ Blog Post
   font-size: 170%;
   color: #674941; }
 
+.blog-carousel {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center; }
+
+.blog-image {
+  height: 400px;
+  background-image: url("../../images/Soen.jpg");
+  background-size: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px; }
+
+.blog-content {
+  padding: 70px 120px;
+  height: 400px;
+  background-color: #FFFFFF;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px; }
+  .blog-content h1 {
+    margin-top: 0; }
+  .blog-content p {
+    font-size: 125%;
+    padding-bottom: 20px; }
+
+.blog-thumbnail-1 {
+  background-image: url("../../images/code_orange_forever.jpg");
+  background-size: cover;
+  color: #fffef7; }
+
+.blog-thumbnail-2 {
+  background-image: url("../../images/Oceans_of_Slumber_Winter.jpg");
+  background-size: cover;
+  color: #fffef7; }
+
+.blog-thumbnail-3 {
+  background-image: url("../../images/pain_of_salvation_scarsick.jpg");
+  background-size: cover;
+  color: #fffef7; }
+
+.blog-thumbnail-4 {
+  background-image: url("../../images/Vinyl_Days.jpg");
+  background-size: cover;
+  color: #fffef7; }
+
 /***********************
 
 Youtube Video Ordering
 
 ***********************/
-.flex-container {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  padding: 0 10px 10px 10px;
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  left: 0; }
-
-.social-icons {
-  position: relative; }
-
 /***********************
 
 About Me Contact Card
