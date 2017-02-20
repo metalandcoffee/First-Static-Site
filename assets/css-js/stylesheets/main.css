@@ -61,6 +61,14 @@ p.excerpt {
   word-spacing: .25em;
   vertical-align: middle; }
 
+.logo-blog {
+  font: 300% "Lobster", cursive;
+  letter-spacing: .5em;
+  color: #fffef7;
+  word-spacing: .25em;
+  vertical-align: middle;
+  text-shadow: 3px 6px 2px rgba(0, 0, 0, 0.5); }
+
 .intro-header {
   text-shadow: 3px 6px 2px rgba(0, 0, 0, 0.5);
   letter-spacing: 0.1em;
@@ -226,6 +234,13 @@ Search
 Blog
 
 ***********************/
+.blog-page {
+  background-size: contain;
+  color: #674941; }
+
+.blog-preview {
+  margin-bottom: 50px; }
+
 .blog-thumbnail {
   background: #333333;
   height: 200px;
@@ -252,15 +267,22 @@ Blog
 
 .blog-content {
   padding: 70px 120px;
-  height: 400px;
+  min-height: 400px;
   background-color: #FFFFFF;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px; }
   .blog-content h1 {
+    font-size: 300%;
     margin-top: 0; }
+  .blog-content .date-category {
+    color: #BEA586;
+    text-transform: uppercase;
+    margin-top: 5px;
+    margin-bottom: 40px; }
   .blog-content p {
-    font-size: 125%;
-    padding-bottom: 20px; }
+    font-size: 150%;
+    padding-bottom: 20px;
+    line-height: 200%; }
 
 .blog-thumbnail-1 {
   background-image: url("../../images/code_orange_forever.jpg");
@@ -311,6 +333,9 @@ Footer
   padding-bottom: 40px;
   margin-top: 40px;
   border-top: 1px solid #eee; }
+
+.footer-coffee {
+  color: #fffef7; }
 
 /***********************
 

@@ -84,6 +84,16 @@ p.excerpt {
     vertical-align: middle;
 }
 
+.logo-blog {
+    font: 300% $font-main;
+    letter-spacing: .5em;
+    color: $cream;
+    word-spacing: .25em;
+    vertical-align: middle;
+    text-shadow: 3px 6px 2px rgba(0, 0, 0, 0.5);
+  
+}
+
 .intro-header {
     @include drop-shade(.1em, $cream);
 }
@@ -284,6 +294,15 @@ Blog
 
 ***********************/
 
+.blog-page {
+    background-size: contain;
+    color: $coffee;
+}
+
+.blog-preview {
+    margin-bottom: 50px;
+}
+
 .blog-thumbnail {
     background: #333333;
     height: 200px;
@@ -308,23 +327,30 @@ Blog
     height: 400px;
     background-image: url('../../images/Soen.jpg');
     background-size: cover;
-    border-top-left-radius: 5px; 
-           border-top-right-radius: 5px; 
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 .blog-content {
     padding: 70px 120px;
-    height: 400px;
+    min-height: 400px;
     background-color: #FFFFFF;
-    border-bottom-left-radius: 5px; 
-           border-bottom-right-radius: 5px; 
-    
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
     h1 {
+        font-size: 300%;
         margin-top: 0;
     }
+    .date-category {
+        color: $coffee-light;
+        text-transform: uppercase;
+        margin-top: 5px;
+        margin-bottom: 40px;
+    }
     p {
-        font-size: 125%;
+        font-size: 150%;
         padding-bottom: 20px;
+        line-height: 200%;
     }
 }
 
@@ -391,6 +417,9 @@ Footer
     border-top: 1px solid #eee;
 }
 
+.footer-coffee {
+    color: $cream;
+}
 
 /***********************
 
