@@ -67,7 +67,8 @@ p.excerpt {
   color: #fffef7;
   word-spacing: .25em;
   vertical-align: middle;
-  text-shadow: 3px 6px 2px rgba(0, 0, 0, 0.5); }
+  text-shadow: 3px 6px 2px rgba(0, 0, 0, 0.5);
+  margin-bottom: 40px; }
 
 .intro-header {
   text-shadow: 3px 6px 2px rgba(0, 0, 0, 0.5);
@@ -242,9 +243,17 @@ Blog
   margin-bottom: 50px; }
 
 .blog-thumbnail {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-end;
   background: #333333;
   height: 200px;
   width: 290px; }
+  .blog-thumbnail h4,
+  .blog-thumbnail p {
+    margin-left: 10px;
+    font-weight: 800;
+    text-shadow: 3px 6px 2px rgba(0, 0, 0, 0.5); }
 
 .blog-post {
   background-color: #fffef7;
@@ -283,6 +292,15 @@ Blog
     font-size: 150%;
     padding-bottom: 20px;
     line-height: 200%; }
+  .blog-content .blog-share {
+    color: #BEA586;
+    text-transform: lowercase;
+    font-size: 100%;
+    padding-bottom: 0;
+    line-height: 100%; }
+  .blog-content .blog-share-flex {
+    display: flex;
+    justify-content: space-around; }
 
 .blog-thumbnail-1 {
   background-image: url("../../images/code_orange_forever.jpg");
@@ -358,17 +376,8 @@ Navigation Bar
     text-align: center;
     font-size: 110%; }
   .nav-justified .active a {
-    background-color: #A2825C;
-    background-image: none;
-    box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.15); }
-    .nav-justified .active a:hover {
-      background-color: #A2825C;
-      background-image: none;
-      box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.15); }
-    .nav-justified .active a:focus {
-      background-color: #A2825C;
-      background-image: none;
-      box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.15); }
+    background-color: transparent;
+    color: #BEA586; }
 
 /***********************
 

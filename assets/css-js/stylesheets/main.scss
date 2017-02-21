@@ -91,7 +91,7 @@ p.excerpt {
     word-spacing: .25em;
     vertical-align: middle;
     text-shadow: 3px 6px 2px rgba(0, 0, 0, 0.5);
-  
+    margin-bottom: 40px;
 }
 
 .intro-header {
@@ -304,9 +304,18 @@ Blog
 }
 
 .blog-thumbnail {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
     background: #333333;
     height: 200px;
     width: 290px;
+    h4,
+    p {
+        margin-left: 10px;
+        font-weight: 800;
+        text-shadow: 3px 6px 2px rgba(0, 0, 0, 0.5);
+    }
 }
 
 .blog-post {
@@ -351,6 +360,17 @@ Blog
         font-size: 150%;
         padding-bottom: 20px;
         line-height: 200%;
+    }
+    .blog-share {
+        color: $coffee-light;
+        text-transform: lowercase;
+        font-size: 100%;
+        padding-bottom: 0;
+        line-height: 100%;
+    }
+    .blog-share-flex {
+        display: flex;
+        justify-content: space-around;
     }
 }
 
@@ -421,6 +441,7 @@ Footer
     color: $cream;
 }
 
+
 /***********************
 
 Navigation Bar
@@ -447,19 +468,8 @@ Navigation Bar
     }
     .active {
         a {
-            background-color: $coffee-cream;
-            background-image: none;
-            box-shadow: inset 0 3px 7px rgba(0, 0, 0, .15);
-            &:hover {
-                background-color: $coffee-cream;
-                background-image: none;
-                box-shadow: inset 0 3px 7px rgba(0, 0, 0, .15);
-            }
-            &:focus {
-                background-color: $coffee-cream;
-                background-image: none;
-                box-shadow: inset 0 3px 7px rgba(0, 0, 0, .15);
-            }
+            background-color: rgba(0, 0, 0, 0);
+            color: $coffee-light;
         }
     }
 }
