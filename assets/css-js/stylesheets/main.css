@@ -93,6 +93,8 @@ Jumbotron
   display: block;
   background-color: rgba(103, 73, 65, 0.6);
   height: 100%; }
+  .jumbo-overlay a {
+    color: #fffef7; }
 
 .jumbo-radio {
   height: 400px; }
@@ -125,6 +127,8 @@ Coffee Section
 ***********************/
 .feature-section {
   min-height: 500px; }
+  .feature-section a {
+    color: #674941; }
 
 .coffee-section {
   background: url("../../images/coffee.jpg");
@@ -136,6 +140,8 @@ Coffee Section
   display: block;
   background-color: rgba(103, 73, 65, 0.95);
   height: 100%; }
+  .coffee-overlay a {
+    color: #fffef7; }
 
 .coffee-header {
   text-shadow: 3px 6px 2px rgba(0, 0, 0, 0.5);
@@ -173,6 +179,8 @@ Cream Section
 
 .sotw-overlay {
   background-color: rgba(255, 254, 247, 0.95); }
+  .sotw-overlay a {
+    color: #674941; }
 
 .yt-section {
   background-image: url("../../images/coffee2.jpg");
