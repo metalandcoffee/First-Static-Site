@@ -17,6 +17,13 @@ General
   padding-top: 50px;
   padding-bottom: 50px; }
 
+.blog-container {
+  padding-top: 0;
+  position: relative; }
+
+.blog-body {
+  background-color: #674941; }
+
 /***********************
 
 Typography
@@ -273,7 +280,8 @@ Blog
 .blog-carousel {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: center; }
+  justify-content: center;
+  margin-bottom: 40px; }
 
 .blog-image {
   height: 400px;
@@ -329,6 +337,29 @@ Blog
   background-image: url("../../images/Vinyl_Days.jpg");
   background-size: cover;
   color: #fffef7; }
+
+#main-wrapper .before {
+  /* background-color: #ffffff; */ }
+
+.blog-sidebar {
+  bottom: 0;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  z-index: -1;
+  height: inherit !important;
+  right: 76%;
+  box-shadow: 0 0 2px 3px rgba(0, 0, 0, 0.03), 0 1px 5px rgba(0, 0, 0, 0.1); }
+
+.blog-sidebar:after {
+  float: right;
+  width: 3px;
+  height: 100%;
+  content: '';
+  border-right: 1px solid #fff;
+  position: relative;
+  left: 3px; }
 
 /***********************
 
@@ -392,6 +423,9 @@ Navigation Bar
 Media Queries
 
 ***********************/
+@media (min-width: 1200px) {
+  .container {
+    width: 1190px; } }
 @media (min-width: 768px) {
   .nav-justified {
     max-height: 52px; }
