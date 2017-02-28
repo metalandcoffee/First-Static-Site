@@ -19,6 +19,7 @@ General
 
 .blog-container {
   padding-top: 0;
+  padding-bottom: 0;
   position: relative; }
 
 .blog-body {
@@ -317,6 +318,12 @@ Blog
   .blog-content .blog-share-flex {
     display: flex;
     justify-content: space-around; }
+  .blog-content #post-nav {
+    display: flex; }
+  .blog-content .post-previous span .title,
+  .blog-content .post-next span .title {
+    display: block;
+    text-transform: uppercase; }
 
 .blog-thumbnail-1 {
   background-image: url("../../images/code_orange_forever.jpg");
