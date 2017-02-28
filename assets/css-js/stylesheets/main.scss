@@ -397,43 +397,46 @@ Blog
     }
     #post-nav {
         display: flex;
-    }
-    .post-previous,
-    .post-next {
-        span {
-            .title {
-                display: block;
-                text-transform: uppercase;
+        .post-previous,
+        .post-next {
+            span {
+                .title {
+                    display: block;
+                    text-transform: uppercase;
+                }
             }
         }
     }
 }
-
-
 
 .blog-thumbnail-1 {
     background-image: url('../../images/code_orange_forever.jpg');
     background-size: cover;
     color: $cream;
 }
+
 .blog-thumbnail-2 {
     background-image: url('../../images/Oceans_of_Slumber_Winter.jpg');
     background-size: cover;
     color: $cream;
 }
+
 .blog-thumbnail-3 {
     background-image: url('../../images/pain_of_salvation_scarsick.jpg');
     background-size: cover;
     color: $cream;
 }
+
 .blog-thumbnail-4 {
     background-image: url('../../images/Vinyl_Days.jpg');
     background-size: cover;
     color: $cream;
 }
+
 #main-wrapper .before {
     /* background-color: #ffffff; */
 }
+
 .blog-sidebar {
     bottom: 0;
     background: #fff;
@@ -445,6 +448,7 @@ Blog
     right: 76%;
     box-shadow: 0 0 2px 3px rgba(0, 0, 0, .03), 0 1px 5px rgba(0, 0, 0, .1);
 }
+
 .blog-sidebar:after {
     float: right;
     width: 3px;
@@ -455,17 +459,20 @@ Blog
     left: 3px;
 }
 
+
 /***********************
 
 Youtube Video Ordering
 
 ***********************/
 
+
 /***********************
 
 About Me Contact Card
 
 ***********************/
+
 .contact-card {
     border: 1px solid $coffee-light;
     border-radius: 5px;
@@ -477,37 +484,39 @@ About Me Contact Card
     }
 }
 
+
 /***********************
 
 Footer
 
 ***********************/
+
 .footer {
     padding-top: 40px;
     padding-bottom: 40px;
     margin-top: 40px;
     border-top: 1px solid #eee;
 }
+
 .footer-coffee {
     color: $cream;
 }
+
 
 /***********************
 
 Navigation Bar
 
 ***********************/
+
 .nav-justified {
     padding-bottom: 70px;
     background: -moz-linear-gradient(top, rgba(103, 73, 65, 1) 0%, rgba(103, 73, 65, 0) 100%);
     /* FF3.6-15 */
-    
     background: -webkit-linear-gradient(top, rgba(103, 73, 65, 1) 0%, rgba(103, 73, 65, 0) 100%);
     /* Chrome10-25,Safari5.1-6 */
-    
     background: linear-gradient(to bottom, rgba(103, 73, 65, 1) 0%, rgba(103, 73, 65, 0) 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    
     copy li {
         a {
             padding-top: 15px;
@@ -518,7 +527,6 @@ Navigation Bar
             font-size: 110%;
         }
     }
-    
     .active {
         a {
             background-color: rgba(0, 0, 0, 0);
@@ -527,35 +535,34 @@ Navigation Bar
     }
 }
 
+
 /***********************
 
 Media Queries
 
 ***********************/
+
 @media (min-width: 1200px) {
     .container {
         width: 1190px;
     }
 }
+
 @media (min-width: 768px) {
     .nav-justified {
         max-height: 52px;
     }
-    
     .nav-justified > li:first-child > a {
         border-left: 0;
         border-radius: 5px 0 0 5px;
     }
-    
     .nav-justified > li:last-child > a {
         border-right: 0;
         border-radius: 0 5px 5px 0;
     }
-    
     .logo-home {
         margin-top: 25%;
     }
-    
     .search-box {
         width: 200px;
     }

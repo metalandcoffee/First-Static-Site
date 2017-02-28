@@ -320,10 +320,10 @@ Blog
     justify-content: space-around; }
   .blog-content #post-nav {
     display: flex; }
-  .blog-content .post-previous span .title,
-  .blog-content .post-next span .title {
-    display: block;
-    text-transform: uppercase; }
+    .blog-content #post-nav .post-previous span .title,
+    .blog-content #post-nav .post-next span .title {
+      display: block;
+      text-transform: uppercase; }
 
 .blog-thumbnail-1 {
   background-image: url("../../images/code_orange_forever.jpg");
