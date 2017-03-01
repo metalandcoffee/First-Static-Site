@@ -49,6 +49,11 @@ General
     background-color: $coffee;
 }
 
+.fa {
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
 
 /***********************
 
@@ -380,7 +385,7 @@ Blog
         margin-bottom: 40px;
     }
     p {
-        font-size: 150%;
+        font-size: 125%;
         padding-bottom: 20px;
         line-height: 200%;
     }
@@ -393,17 +398,35 @@ Blog
     }
     .blog-share-flex {
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
     }
     #post-nav {
         display: flex;
         .post-previous,
         .post-next {
-            span {
+            
                 .title {
                     display: block;
                     text-transform: uppercase;
+                    font-size: 75%;
                 }
+            
+        }
+        
+        .post-previous {
+            margin-right: 20%;
+        }
+        .post-next {
+            text-align: right;
+            margin-left: 20%;
+        }
+        
+        h3 {
+            margin-top: 5px;
+            a {
+                color: $coffee;
+                text-shadow: none;
+                font-size: 70%;
             }
         }
     }

@@ -25,6 +25,10 @@ General
 .blog-body {
   background-color: #674941; }
 
+.fa {
+  padding-left: 2%;
+  padding-right: 2%; }
+
 /***********************
 
 Typography
@@ -306,7 +310,7 @@ Blog
     margin-top: 5px;
     margin-bottom: 40px; }
   .blog-content p {
-    font-size: 150%;
+    font-size: 125%;
     padding-bottom: 20px;
     line-height: 200%; }
   .blog-content .blog-share {
@@ -317,13 +321,25 @@ Blog
     line-height: 100%; }
   .blog-content .blog-share-flex {
     display: flex;
-    justify-content: space-around; }
+    justify-content: center; }
   .blog-content #post-nav {
     display: flex; }
-    .blog-content #post-nav .post-previous span .title,
-    .blog-content #post-nav .post-next span .title {
+    .blog-content #post-nav .post-previous .title,
+    .blog-content #post-nav .post-next .title {
       display: block;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      font-size: 75%; }
+    .blog-content #post-nav .post-previous {
+      margin-right: 20%; }
+    .blog-content #post-nav .post-next {
+      text-align: right;
+      margin-left: 20%; }
+    .blog-content #post-nav h3 {
+      margin-top: 5px; }
+      .blog-content #post-nav h3 a {
+        color: #674941;
+        text-shadow: none;
+        font-size: 70%; }
 
 .blog-thumbnail-1 {
   background-image: url("../../images/code_orange_forever.jpg");
