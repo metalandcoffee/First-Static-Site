@@ -100,7 +100,7 @@ p.excerpt {
 }
 
 .logo-blog {
-    font: 300% $font-main;
+    font: 250% $font-main;
     letter-spacing: .5em;
     color: $cream;
     word-spacing: .25em;
@@ -482,7 +482,15 @@ Blog
     left: 3px;
 }
 
+.blog-sidebar-content {
+    margin-top: 50px;
+    position: fixed;
+}
 
+.category-list {
+    text-transform: uppercase;
+    line-height: 300%;
+}
 /***********************
 
 Youtube Video Ordering

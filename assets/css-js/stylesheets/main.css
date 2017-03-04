@@ -74,7 +74,7 @@ p.excerpt {
   vertical-align: middle; }
 
 .logo-blog {
-  font: 300% "Lobster", cursive;
+  font: 250% "Lobster", cursive;
   letter-spacing: .5em;
   color: #fffef7;
   word-spacing: .25em;
@@ -383,6 +383,14 @@ Blog
   border-right: 1px solid #fff;
   position: relative;
   left: 3px; }
+
+.blog-sidebar-content {
+  margin-top: 50px;
+  position: fixed; }
+
+.category-list {
+  text-transform: uppercase;
+  line-height: 300%; }
 
 /***********************
 
