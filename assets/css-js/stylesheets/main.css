@@ -328,6 +328,8 @@ Blog
         color: #674941;
         text-shadow: none;
         font-size: 70%; }
+  .blog-content .read-more-link {
+    text-align: center; }
 
 .blog-thumbnail-1 {
   background-image: url("../../images/code_orange_forever.jpg");
