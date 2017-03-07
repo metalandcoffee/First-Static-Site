@@ -69,8 +69,6 @@ body {
 }
 
 h1,
-h2,
-h3,
 nav {
     font-family: $font-main;
     @include drop-shade(.1em, $coffee);
@@ -93,14 +91,14 @@ p.excerpt {
 .logo {
     font: 300% $font-main;
     @include drop-shade(.5em, $coffee-light);
-    text-shadow: 3px 0px 17px rgba(255, 254, 247, 1);
+    text-shadow: 2px 0px 8px rgba(255, 254, 247, 1);
     color: $coffee !important;
     word-spacing: .25em;
     vertical-align: middle;
 }
 
 .logo-blog {
-    font: 250% $font-main;
+    font: 245% $body-font;
     letter-spacing: .5em;
     color: $cream;
     word-spacing: .25em;
@@ -154,21 +152,6 @@ Jumbotron
     color: $coffee-light;
 }
 
-.flex-container {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    padding: 0 10px 10px 10px;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
-
-.social-icons {
-    position: relative;
-}
-
 
 /***********************
 
@@ -204,6 +187,12 @@ Coffee Section
     $cream);
 }
 
+.cream-header {
+    text-shadow: 3px 6px 2px rgba(0, 0, 0, 0.3);
+    letter-spacing: 0.1em;
+    color: $coffee;
+}
+
 .c-archive-btn {
     text-shadow: 1px 1px 3px #666666;
     font-family: $font-main;
@@ -215,16 +204,15 @@ Coffee Section
     background: none;
     margin-top: 20px;
     margin-bottom: 20px;
+    transition: all 0.3s;
 }
 
 .c-archive-btn:hover {
     background-color: rgba(255, 254, 247, .5);
     color: $coffee;
     text-decoration: none;
-}
-
-.c-archive-lnk:hover {
-    text-decoration: none;
+    transform: scale(1.05, 1.05);
+    border: solid $cream 3px;
 }
 
 
@@ -287,17 +275,18 @@ iframe {
     background: none;
     margin-top: 20px;
     margin-bottom: 20px;
+    transition: all 0.3s;
 }
 
 .archive-btn:hover {
-    background-color: rgba(103, 73, 65, .5);
     color: $cream;
+    background-color: rgba(103, 73, 65, .5);
     text-decoration: none;
+    border: solid $coffee 3px;
+    transform: scale(1.05, 1.05);
+
 }
 
-.archive-lnk:hover {
-    text-decoration: none;
-}
 
 
 /***********************
@@ -533,6 +522,27 @@ Footer
     color: $cream;
 }
 
+.flex-container {
+    a {
+        color: $coffee;  
+    }
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 0 10px 40px 10px;
+}
+
+.flex-container-coffee {
+    a {
+        color: $cream;  
+    }
+    
+}
+
+.social-icons {
+    position: relative;
+}
 
 /***********************
 
