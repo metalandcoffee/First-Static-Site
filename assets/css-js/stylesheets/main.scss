@@ -449,9 +449,19 @@ Blog
     color: $cream;
 }
 
-#main-wrapper .before {
-    /* background-color: #ffffff; */
+.mc-thumbnail img {
+    max-width: 100%;
 }
+
+.related-posts {
+    h4.date-category {
+        font-size: 90%;
+    }
+    a {
+        color: inherit;
+    }    
+}
+
 
 .blog-sidebar {
     bottom: 0;

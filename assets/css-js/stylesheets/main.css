@@ -351,8 +351,13 @@ Blog
   background-size: cover;
   color: #fffef7; }
 
-#main-wrapper .before {
-  /* background-color: #ffffff; */ }
+.mc-thumbnail img {
+  max-width: 100%; }
+
+.related-posts h4.date-category {
+  font-size: 90%; }
+.related-posts a {
+  color: inherit; }
 
 .blog-sidebar {
   bottom: 0;
