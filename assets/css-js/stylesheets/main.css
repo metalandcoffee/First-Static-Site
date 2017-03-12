@@ -110,10 +110,11 @@ Jumbotron
 .jumbo-blog {
   height: 50px; }
 
-.nav > li > a:focus,
-.nav > li > a:hover {
-  background-color: transparent;
-  color: #BEA586; }
+.nav li a {
+  transition: all 0.5s; }
+  .nav li a:hover, .nav li a:focus {
+    background-color: transparent;
+    color: #BEA586; }
 
 /***********************
 
@@ -165,7 +166,6 @@ Coffee Section
   background-color: rgba(255, 254, 247, 0.5);
   color: #674941;
   text-decoration: none;
-  transform: scale(1.05, 1.05);
   border: solid #fffef7 3px; }
 
 /***********************
@@ -224,8 +224,7 @@ iframe {
   color: #fffef7;
   background-color: rgba(103, 73, 65, 0.5);
   text-decoration: none;
-  border: solid #674941 3px;
-  transform: scale(1.05, 1.05); }
+  border: solid #674941 3px; }
 
 /***********************
 
@@ -427,6 +426,10 @@ Footer
   padding: 0 10px 40px 10px; }
   .flex-container a {
     color: #674941; }
+  .flex-container i {
+    transition: all 0.2s; }
+    .flex-container i:hover {
+      transform: scale(1.1, 1.1); }
 
 .flex-container-coffee a {
   color: #fffef7; }
@@ -440,13 +443,7 @@ Navigation Bar
 
 ***********************/
 .nav-justified {
-  padding-bottom: 70px;
-  background: -moz-linear-gradient(top, #674941 0%, rgba(103, 73, 65, 0) 100%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #674941 0%, rgba(103, 73, 65, 0) 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #674941 0%, rgba(103, 73, 65, 0) 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
+  padding-bottom: 70px; }
   .nav-justified copy li a {
     padding-top: 15px;
     padding-bottom: 15px;

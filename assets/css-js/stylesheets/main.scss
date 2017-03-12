@@ -146,10 +146,17 @@ Jumbotron
     height: 50px;
 }
 
-.nav > li > a:focus,
-.nav > li > a:hover {
-    background-color: rgba(0, 0, 0, 0);
-    color: $coffee-light;
+
+.nav {
+    li {
+        a {
+            transition: all 0.5s;
+            &:hover, &:focus {
+                background-color: rgba(0, 0, 0, 0);
+                color: $coffee-light;
+            } 
+        }
+    }
 }
 
 
@@ -211,7 +218,7 @@ Coffee Section
     background-color: rgba(255, 254, 247, .5);
     color: $coffee;
     text-decoration: none;
-    transform: scale(1.05, 1.05);
+//    transform: scale(1.05, 1.05);
     border: solid $cream 3px;
 }
 
@@ -283,7 +290,7 @@ iframe {
     background-color: rgba(103, 73, 65, .5);
     text-decoration: none;
     border: solid $coffee 3px;
-    transform: scale(1.05, 1.05);
+//    transform: scale(1.05, 1.05);
 
 }
 
@@ -540,11 +547,16 @@ Footer
     a {
         color: $coffee;  
     }
-
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     padding: 0 10px 40px 10px;
+    i {
+        transition: all 0.2s;
+        &:hover {
+            transform: scale(1.1, 1.1);
+        }
+    }
 }
 
 .flex-container-coffee {
@@ -566,12 +578,12 @@ Navigation Bar
 
 .nav-justified {
     padding-bottom: 70px;
-    background: -moz-linear-gradient(top, rgba(103, 73, 65, 1) 0%, rgba(103, 73, 65, 0) 100%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(103, 73, 65, 1) 0%, rgba(103, 73, 65, 0) 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(103, 73, 65, 1) 0%, rgba(103, 73, 65, 0) 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+//    background: -moz-linear-gradient(top, rgba(103, 73, 65, 1) 0%, rgba(103, 73, 65, 0) 100%);
+//    /* FF3.6-15 */
+//    background: -webkit-linear-gradient(top, rgba(103, 73, 65, 1) 0%, rgba(103, 73, 65, 0) 100%);
+//    /* Chrome10-25,Safari5.1-6 */
+//    background: linear-gradient(to bottom, rgba(103, 73, 65, 1) 0%, rgba(103, 73, 65, 0) 100%);
+//    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     copy li {
         a {
             padding-top: 15px;
