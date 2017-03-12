@@ -329,6 +329,11 @@ Blog
         font-size: 70%; }
   .blog-content .read-more-link {
     text-align: center; }
+  .blog-content h3 {
+    font-size: 135%;
+    color: #BEA586;
+    text-transform: lowercase;
+    margin-bottom: 45px; }
 
 .blog-thumbnail-1 {
   background-image: url("../../images/code_orange_forever.jpg");

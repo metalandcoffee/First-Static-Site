@@ -430,6 +430,13 @@ Blog
     .read-more-link {
         text-align: center;
     }
+    
+    h3 {
+        font-size: 135%;
+        color: $coffee-light;
+        text-transform: lowercase;
+        margin-bottom: 45px;
+    }
 }
 
 .blog-thumbnail-1 {
