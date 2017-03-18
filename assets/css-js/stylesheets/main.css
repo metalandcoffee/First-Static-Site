@@ -397,7 +397,27 @@ Song of the Week
 
 ***********************/
 h1#sotw-logo {
-  font-size: 384%; }
+  font-size: 380%; }
+
+h2.sotw-header {
+  margin-bottom: 20px;
+  color: #BEA586; }
+
+.sotw-archive {
+  font-size: 130%;
+  line-height: 180%;
+  max-height: 380px;
+  overflow: scroll;
+  border-top: 1px solid #d7d7d7;
+  border-bottom: 1px solid #d7d7d7; }
+  .sotw-archive span {
+    display: inline-block;
+    padding-right: 2px;
+    font-size: 110%;
+    font-weight: 800; }
+
+p.sotw-date {
+  margin-top: 30px; }
 
 /***********************
 
