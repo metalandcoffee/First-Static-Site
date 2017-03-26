@@ -40,21 +40,22 @@ body {
   color: #674941;
   -webkit-font-smoothing: antialiased; }
 
-h1,
-nav {
+h1 {
   font-family: "Lobster", cursive;
   text-shadow: 3px 6px 2px rgba(0, 0, 0, 0.5);
   letter-spacing: 0.1em;
   color: #674941;
   text-shadow: 3px 0px 17px #fffef7; }
-  h1 a,
+
+h4 {
+  margin-top: 20px; }
+
+nav {
+  font-weight: 600; }
   nav a {
     color: #fffef7;
     letter-spacing: 3px;
     text-shadow: 3px 6px 2px rgba(0, 0, 0, 0.5); }
-
-h4 {
-  margin-top: 20px; }
 
 h3#blog-feature {
   font-family: "Lobster", cursive;
@@ -72,8 +73,7 @@ h3#blog-feature {
   text-shadow: 3px 6px 2px rgba(0, 0, 0, 0.5);
   letter-spacing: 0.5em;
   color: #BEA586;
-  text-shadow: 2px 0px 8px #fffef7;
-  color: #674941 !important;
+  color: #cc0000 !important;
   word-spacing: .25em;
   vertical-align: middle; }
 
@@ -130,7 +130,7 @@ Coffee Section
 
 ***********************/
 .feature-section {
-  min-height: 500px; }
+  min-height: 710px; }
   .feature-section a {
     color: #674941; }
 
@@ -157,7 +157,7 @@ Coffee Section
   margin-bottom: 40px; }
 
 .cream-header {
-  text-shadow: 3px 6px 2px rgba(0, 0, 0, 0.3);
+  text-shadow: 3px 6px 2px rgba(178, 169, 169, 0.5);
   letter-spacing: 0.1em;
   color: #674941;
   margin-bottom: 40px; }
@@ -452,8 +452,6 @@ Youtube Timeline
 .cd-horizontal-timeline .timeline {
   position: relative;
   height: 350px;
-  width: 90%;
-  max-width: 800px;
   margin: 0 auto; }
 
 .cd-horizontal-timeline .events-wrapper {
@@ -461,16 +459,6 @@ Youtube Timeline
   height: 100%;
   margin: 0 40px;
   overflow: hidden; }
-
-.cd-horizontal-timeline .events-wrapper::before {
-  left: 0;
-  background-image: -webkit-linear-gradient(left, #674941 0%, rgba(103, 73, 65, 0) 100%);
-  background-image: linear-gradient(left, #674941 0%, rgba(103, 73, 65, 0) 100%); }
-
-.cd-horizontal-timeline .events-wrapper::after {
-  right: 0;
-  background-image: -webkit-linear-gradient(right, #674941 0%, rgba(103, 73, 65, 0) 100%);
-  background-image: linear-gradient(right, #674941 0%, rgba(103, 73, 65, 0) 100%); }
 
 .cd-horizontal-timeline .events-wrapper::after, .cd-horizontal-timeline .events-wrapper::before {
   content: '';
@@ -487,7 +475,6 @@ Youtube Timeline
   top: 0;
   height: 100%;
   width: 100%;
-  background-color: #7b9d6f;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
   -webkit-transform-origin: left center;
@@ -504,7 +491,6 @@ Youtube Timeline
   left: 0;
   top: 318px;
   height: 2px;
-  background: #dfdfdf;
   -webkit-transition: -webkit-transform 0.4s;
   transition: -webkit-transform 0.4s;
   transition: transform 0.4s;
@@ -675,7 +661,7 @@ Navigation Bar
     font-size: 110%; }
   .nav-justified .active a {
     background-color: transparent;
-    color: #BEA586; }
+    color: red; }
 
 /***********************
 
