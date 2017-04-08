@@ -12,6 +12,7 @@
     <title>Metal & Coffee - Home</title>
     <!-- Bootstrap core CSS -->
     <link href="assets/css-js/bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css-js/stylesheets/flickity.min.css" media="screen">
     <link href="assets/css-js/font-awesome/css/font-awesome.css" rel="stylesheet">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lobster|Raleway:400,500,600,800" rel="stylesheet">
@@ -52,16 +53,7 @@
         </div>
         <!-- Color Overlay End -->
     </div>
-    <!--
-    <div class="coffee-section">
-        <div class="coffee-overlay">
-            <div class="text-center container">
-                <h1 class="intro-header">Metal & Coffee is the persona of a girl from Philadelphia who wants to talk metal over coffee.</h1>
-                <h3 class="intro-header">Radio show airs live on WKDU 91.7 FM every Sunday 10am - 12pm EST.</h3>
-                <h3 class="intro-header">New Youtube videos posted every Sunday.</h3></div>
-        </div>
-    </div>
--->
+
     <div class="sotw-section">
         <div class="sotw-overlay feature-section">
             <div class="container" id="radio">
@@ -145,11 +137,11 @@
                                     </tr>
                                 </tbody>
                             </table>
-                        </div> <a class="btn btn-default archive-btn" href="radio.html">More...</a> </div>
+                        </div> <a class="btn btn-lg btn-danger" href="radio.html">More...</a> </div>
                     <div class="col-sm-5 text-center">
                         <h2 class="cream-header">Song of the Week</h2>
                         <p>Last Updated: Jan 2nd 2017</p>
-                        <iframe class="center-block" src="https://embed.spotify.com/?uri=spotify%3Atrack%3A3cWkjlseY4V0GMyLLpBFyq" width="300" height="380" frameborder="0" allowtransparency="true"></iframe> <a class="btn btn-default archive-btn" href="sotw.html">More...</a> </div>
+                        <iframe class="center-block" src="https://embed.spotify.com/?uri=spotify%3Atrack%3A3cWkjlseY4V0GMyLLpBFyq" width="300" height="380" frameborder="0" allowtransparency="true"></iframe> <a class="btn btn-lg btn-danger" href="sotw.html">More...</a> </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-1"><a href="#top"><i class="fa fa-arrow-up fa-lg" aria-hidden="true"></i>top</a></div>
@@ -161,42 +153,26 @@
         <div class="coffee-overlay feature-section">
             <div class="container" id="videos">
                 <h2 class="text-center coffee-header">Latest Youtube Videos</h2>
-
                 <div class="row">
-                    <div class="cd-horizontal-timeline loaded">
-                        <div class="timeline">
-                            <div class="events-wrapper">
-                                <div class="events">
-                                    <ol>
-                                       <li><iframe id="vid1" width="560" height="315" src="https://www.youtube.com/embed/PDOP-hZwruE" frameborder="0" allowfullscreen></iframe></li>
-                                       <li><iframe id="vid2" width="560" height="315" src="https://www.youtube.com/embed/0w27Kjmaqek" frameborder="0" allowfullscreen></iframe></li>
-                                       <li><iframe id="vid3" width="560" height="315" src="https://www.youtube.com/embed/9PnKPiL70iY" frameborder="0" allowfullscreen></iframe></li>
-                                       <li><iframe id="vid4" width="560" height="315" src="https://www.youtube.com/embed/9tnnqrtW3gA" frameborder="0" allowfullscreen></iframe></li>
-                                       <li><iframe id="vid5" width="560" height="315" src="https://www.youtube.com/embed/bdoE1exXrHY" frameborder="0" allowfullscreen></iframe></li>
-                                       
-                                    </ol> 
-                                    <span class="filling-line" aria-hidden="true"></span> 
-                                    </div>
-                                <!-- .events -->
-                            </div>
-                            <!-- .events-wrapper -->
-                            <ul class="cd-timeline-navigation">
-                                <li><a href="#0" class="prev inactive">Prev</a></li>
-                                <li><a href="#0" class="next">Next</a></li>
-                            </ul>
-                            <!-- .cd-timeline-navigation -->
-                        </div>
-                        <!-- .timeline -->
-                    </div>
+<div class="main-carousel" data-flickity='{ "wrapAround": true }'>
+  <div class="carousel-cell"><iframe width="560" height="315" src="https://www.youtube.com/embed/PDOP-hZwruE" frameborder="0" allowfullscreen></iframe></div>
+  <div class="carousel-cell"><iframe width="560" height="315" src="https://www.youtube.com/embed/0w27Kjmaqek" frameborder="0" allowfullscreen></iframe></div>
+  <div class="carousel-cell"><iframe width="560" height="315" src="https://www.youtube.com/embed/9PnKPiL70iY" frameborder="0" allowfullscreen></iframe></div>
+  <div class="carousel-cell"><iframe width="560" height="315" src="https://www.youtube.com/embed/9tnnqrtW3gA" frameborder="0" allowfullscreen></iframe></div>
+  <div class="carousel-cell"><iframe id="vid5" width="560" height="315" src="https://www.youtube.com/embed/bdoE1exXrHY" frameborder="0" allowfullscreen></iframe></div>
+</div>                   
+                   
+               
                 </div>
-                                <div class="row text-center"> <a class="btn btn-default c-archive-btn" href="http://www.youtube.com/user/theebonieiscool" target="_blank">Youtube Channel</a> </div>
+                <div class="row text-center"> <a class="btn btn-lg btn-danger" href="http://www.youtube.com/user/theebonieiscool">Youtube Channel</a>  </div>
                 <div class="row">
                     <div class="col-sm-1"><a href="#top"><i class="fa fa-arrow-up fa-lg" aria-hidden="true"></i>top</a></div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="feature-section">
+    <div class="sotw-section">
+    <div class="sotw-overlay feature-section">
         <div class="container" id="blog">
             <h2 class="text-center cream-header">The Metal & Coffee Blog</h2>
             <div class="row">
@@ -214,12 +190,14 @@
                     </div>
                 </div>
             </div>
-            <div class="row text-center"> <a class="btn btn-default archive-btn" href="blog.html">Read More...</a> </div>
+            <div class="row text-center"> <a class="btn btn-lg btn-danger" href="blog.html">Read More...</a> 
+
+            </div>
             <div class="row">
                 <div class="col-sm-1"><a href="#top"><i class="fa fa-arrow-up fa-lg" aria-hidden="true"></i>top</a></div>
             </div>
         </div>
-    </div>
+    </div></div>
     <div class="coffee-section shows-section">
         <div class="coffee-overlay feature-section">
             <div class="container" id="shows">
@@ -280,7 +258,7 @@
             </div>
         </div>
     </div>
-    <div class="feature-section">
+    <div class="sotw-overlay feature-section">
         <div class="container" id="about">
             <h2 class="text-center cream-header">The MC</h2>
             <div class="row">
@@ -317,7 +295,7 @@
                 </div>
             </div>
             <div class="row">
-                <button class="btn btn-default center-block archive-btn" type="button" data-toggle="modal" data-target=".bs-example-modal-lg">Contact</button>
+                <button class="btn btn-lg btn-danger center-block" type="button" data-toggle="modal" data-target=".bs-example-modal-lg">Contact</button>
             </div>
             <div class="row">
                 <div class="col-sm-1"><a href="#top"><i class="fa fa-arrow-up fa-lg" aria-hidden="true"></i>top</a></div>
@@ -336,6 +314,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="assets/css-js/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+    <script src="assets/css-js/js/flickity.pkgd.min.js"></script>
     <script src="assets/css-js/js/main.js"></script>
 </body>
 
