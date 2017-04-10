@@ -221,27 +221,6 @@ Coffee Section
     letter-spacing: 3px;
 }
 
-a.c-archive-btn {
-    text-shadow: 1px 1px 3px #666666;
-    font-family: $font-main;
-    color: $cream;
-    font-size: 20px;
-    padding: 10px 30px 10px 30px;
-    border: solid $cream 3px;
-    text-decoration: none;
-    background: none;
-    margin: 40px 0 20px 0;
-    transition: all 0.3s;
-}
-
-a.c-archive-btn:hover {
-    background-color: rgba(255, 254, 247, .5);
-    color: $coffee;
-    text-decoration: none;
-    //    transform: scale(1.05, 1.05);
-    border: solid $cream 3px;
-}
-
 
 /***********************
 
@@ -287,35 +266,20 @@ Cream Section
     max-height: 200px;
 }
 
-#videos iframe {
-    margin: 0 100px;
-}
-
-.archive-btn {
-    text-shadow: 1px 1px 3px #666666;
-    font-family: $font-main;
-    color: $coffee;
-    font-size: 20px;
-    padding: 10px 30px 10px 30px;
-    border: solid $coffee 3px;
-    text-decoration: none;
-    background: none;
-    margin: 40px 0 20px 0;
-    transition: all 0.3s;
-}
-
-.archive-btn:hover {
-    color: $cream;
-    background-color: rgba(103, 73, 65, .5);
-    text-decoration: none;
-    border: solid $coffee 3px;
-    //    transform: scale(1.05, 1.05);
-}
-
 #blog-header-feature {
     margin-bottom: 40px;
 }
 
+/***********************
+
+Youtube Section
+
+***********************/
+
+/*
+#videos iframe {
+    margin: 0 100px;
+} */
 
 /***********************
 
@@ -558,35 +522,6 @@ h2.sotw-header {
 p.sotw-date {
     margin-top: 30px;
 }
-
-/*****REMOVE******/
-
-body { font-family: sans-serif; }
-
-.carousel {
-  background: #EEE;
-}
-
-.carousel-cell {
-  width: 66%;
-  height: 200px;
-  margin-right: 10px;
-  background: #8C8;
-  border-radius: 5px;
-  counter-increment: carousel-cell;
-}
-
-/* cell number */
-.carousel-cell:before {
-  display: block;
-  text-align: center;
-  content: counter(carousel-cell);
-  line-height: 200px;
-  font-size: 80px;
-  color: white;
-}
-
-/*****REMOVE END******/
 
 /***********************
 

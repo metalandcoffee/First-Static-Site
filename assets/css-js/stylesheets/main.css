@@ -166,24 +166,6 @@ Coffee Section
   background-color: #cc0000;
   letter-spacing: 3px; }
 
-a.c-archive-btn {
-  text-shadow: 1px 1px 3px #666666;
-  font-family: "Lobster", cursive;
-  color: #fffef7;
-  font-size: 20px;
-  padding: 10px 30px 10px 30px;
-  border: solid #fffef7 3px;
-  text-decoration: none;
-  background: none;
-  margin: 40px 0 20px 0;
-  transition: all 0.3s; }
-
-a.c-archive-btn:hover {
-  background-color: rgba(255, 254, 247, 0.5);
-  color: #674941;
-  text-decoration: none;
-  border: solid #fffef7 3px; }
-
 /***********************
 
 Cream Section
@@ -220,30 +202,18 @@ Cream Section
 .playlist-main {
   max-height: 200px; }
 
-#videos iframe {
-  margin: 0 100px; }
-
-.archive-btn {
-  text-shadow: 1px 1px 3px #666666;
-  font-family: "Lobster", cursive;
-  color: #674941;
-  font-size: 20px;
-  padding: 10px 30px 10px 30px;
-  border: solid #674941 3px;
-  text-decoration: none;
-  background: none;
-  margin: 40px 0 20px 0;
-  transition: all 0.3s; }
-
-.archive-btn:hover {
-  color: #fffef7;
-  background-color: rgba(103, 73, 65, 0.5);
-  text-decoration: none;
-  border: solid #674941 3px; }
-
 #blog-header-feature {
   margin-bottom: 40px; }
 
+/***********************
+
+Youtube Section
+
+***********************/
+/*
+#videos iframe {
+    margin: 0 100px;
+} */
 /***********************
 
 Search
@@ -438,31 +408,6 @@ h2.sotw-header {
 p.sotw-date {
   margin-top: 30px; }
 
-/*****REMOVE******/
-body {
-  font-family: sans-serif; }
-
-.carousel {
-  background: #EEE; }
-
-.carousel-cell {
-  width: 66%;
-  height: 200px;
-  margin-right: 10px;
-  background: #8C8;
-  border-radius: 5px;
-  counter-increment: carousel-cell; }
-
-/* cell number */
-.carousel-cell:before {
-  display: block;
-  text-align: center;
-  content: counter(carousel-cell);
-  line-height: 200px;
-  font-size: 80px;
-  color: white; }
-
-/*****REMOVE END******/
 /***********************
 
 About Me Contact Card
