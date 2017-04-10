@@ -651,13 +651,14 @@ Media Queries
     .search-box {
         width: 200px;
     }
+        #videos iframe {
+        width: 560px;
+    }
 
 
 }
 
-@media (max-width: 700px) {
-    #videos iframe {
-        width: 400px;
-    }
+@media (max-width: 768px) {
+
 
 }

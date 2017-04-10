@@ -496,9 +496,9 @@ Media Queries
     margin-top: 25%; }
 
   .search-box {
-    width: 200px; } }
-@media (max-width: 700px) {
+    width: 200px; }
+
   #videos iframe {
-    width: 400px; } }
+    width: 560px; } }
 
 /*# sourceMappingURL=main.css.map */
