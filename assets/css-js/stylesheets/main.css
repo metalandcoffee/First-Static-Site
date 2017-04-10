@@ -130,7 +130,7 @@ Coffee Section
 
 ***********************/
 .feature-section {
-  min-height: 710px; }
+  min-height: 500px; }
 
 .coffee-section {
   color: #fffef7;
@@ -198,6 +198,8 @@ Cream Section
   overflow: scroll;
   border-top: 1px solid #d7d7d7;
   border-bottom: 1px solid #d7d7d7; }
+  .playlist-archive table {
+    overflow: hidden; }
 
 .playlist-main {
   max-height: 200px; }
@@ -211,7 +213,7 @@ Youtube Section
 
 ***********************/
 #videos iframe {
-  margin: 0 100px; }
+  margin: 0 50px; }
 
 /***********************
 
