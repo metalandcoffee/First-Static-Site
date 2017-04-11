@@ -124,6 +124,20 @@ h3#blog-feature {
     @include drop-shade(.1em, $cream);
 }
 
+.btn {
+    padding: 10px 30px 10px 30px;
+    margin: 40px 0 20px 0;
+    background-color: rgb(204, 0, 0);
+    letter-spacing: 3px;
+    transition: all 0.5s;
+}
+
+.btn-danger:hover,
+.btn-danger:focus {
+  background-color: rgb(256, 0, 0);
+  border-color: #e80202;
+}
+
 
 /***********************
 
@@ -216,12 +230,6 @@ Coffee Section
     margin-bottom: 40px;
 }
 
-.btn {
-    padding: 10px 30px 10px 30px;
-    margin: 40px 0 20px 0;
-    background-color: rgb(204, 0, 0);
-    letter-spacing: 3px;
-}
 
 
 /***********************
@@ -514,6 +522,7 @@ h2.sotw-header {
     font-size: 130%;
     line-height: 180%;
     max-height: 380px;
+    margin: 0 60px;
     overflow: scroll;
     border-top: 1px solid #d7d7d7;
     border-bottom: 1px solid #d7d7d7;

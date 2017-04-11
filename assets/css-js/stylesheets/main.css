@@ -91,6 +91,18 @@ h3#blog-feature {
   letter-spacing: 0.1em;
   color: #fffef7; }
 
+.btn {
+  padding: 10px 30px 10px 30px;
+  margin: 40px 0 20px 0;
+  background-color: #cc0000;
+  letter-spacing: 3px;
+  transition: all 0.5s; }
+
+.btn-danger:hover,
+.btn-danger:focus {
+  background-color: red;
+  border-color: #e80202; }
+
 /***********************
 
 Jumbotron
@@ -159,12 +171,6 @@ Coffee Section
   letter-spacing: 0.1em;
   color: #674941;
   margin-bottom: 40px; }
-
-.btn {
-  padding: 10px 30px 10px 30px;
-  margin: 40px 0 20px 0;
-  background-color: #cc0000;
-  letter-spacing: 3px; }
 
 /***********************
 
@@ -397,6 +403,7 @@ h2.sotw-header {
   font-size: 130%;
   line-height: 180%;
   max-height: 380px;
+  margin: 0 60px;
   overflow: scroll;
   border-top: 1px solid #d7d7d7;
   border-bottom: 1px solid #d7d7d7; }
