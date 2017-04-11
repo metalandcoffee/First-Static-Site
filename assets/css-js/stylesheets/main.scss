@@ -522,7 +522,8 @@ h2.sotw-header {
     font-size: 130%;
     line-height: 180%;
     max-height: 380px;
-    margin: 0 60px;
+    width: 300px;
+    margin: 0 auto;
     overflow: scroll;
     border-top: 1px solid #d7d7d7;
     border-bottom: 1px solid #d7d7d7;
@@ -671,7 +672,10 @@ Media Queries
     h1#sotw-logo {
         font-size: 380%;
     }
-    
+    .sotw-archive {
+        width: auto;
+        
+    }
 }
 
 @media (max-width: 768px) {
