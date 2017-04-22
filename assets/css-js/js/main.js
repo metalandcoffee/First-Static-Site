@@ -42,3 +42,14 @@ $(function() {
     }
   });
 });
+
+
+// Scroll to top button
+$( window ).scroll( function() {
+    console.log($(this).scrollTop());
+    if ($(this).scrollTop() > 600) { 
+        $('#scroll-top').fadeIn();
+    } else {
+      $('#scroll-top').fadeOut();
+    }
+});

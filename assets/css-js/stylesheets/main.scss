@@ -56,6 +56,23 @@ General
     padding-right: 2%;
 }
 
+#scroll-top {
+    color: #ffffff;
+    background-color: #000000;
+    transition: all 0.4s ease-in-out;
+    opacity: .6;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    z-index: 999;
+    padding: 8px;
+    display: none;
+    
+    &:hover {
+        opacity: 1;
+    }
+}
+
 
 /***********************
 
@@ -105,7 +122,7 @@ h3#blog-feature {
     font: 300% $font-main;
     @include drop-shade(.5em, $coffee-light);
 //    text-shadow: 2px 0px 8px rgba(255, 254, 247, 1);
-    color: rgb(204, 0, 0) !important;
+    color: rgb(256, 0, 0) !important;
     word-spacing: .25em;
     vertical-align: middle;
 }
@@ -153,12 +170,18 @@ Jumbotron
     height: 800px;
     padding: 0;
     margin: 0;
-    //    font-smoothing;
+} 
+
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .jumbo-overlay {
     display: block;
-    background-color: rgba(103, 73, 65, .6);
+    background-color: rgba(30, 20, 9, 0.85);
     height: 100%;
     a {
         color: $cream;
@@ -181,6 +204,10 @@ Jumbotron
             &:focus {
                 background-color: rgba(0, 0, 0, 0);
                 color: $coffee-light;
+            }
+            span:not(.glyphicon) {
+                padding-bottom: 10px;
+                border-bottom: solid 3px $cream;
             }
         }
     }
@@ -274,6 +301,10 @@ Cream Section
     table {
         overflow: hidden;
     }
+}
+
+.single-playlist-archive {
+    max-height: 400px;
 }
 
 .playlist-main {
