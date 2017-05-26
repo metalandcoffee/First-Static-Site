@@ -10,7 +10,7 @@ $header-font: 'Metal Mania',
 cursive;
 $body-font: 'Raleway',
 sans-serif;
-$coffee: #674941;
+$coffee: #1e1409;
 $cream: #fffef7;
 $coffee-light: #BEA586;
 $coffee-cream: #A2825C;
@@ -165,7 +165,7 @@ Jumbotron
 .jumbo-home {
     background-color: $coffee;
     color: $cream;
-    background: url('../../images/homepage.jpg') no-repeat;
+    background: url('images/homepage.jpg') no-repeat;
     background-size: cover;
     height: 800px;
     padding: 0;
@@ -230,14 +230,14 @@ Coffee Section
 }
 
 .coffee-section.shows-section {
-        background: url('../../images/coffee.jpg');
+        background: url('images/coffee.jpg');
     background-size: cover;
     background-position: center;
 }
 
 .coffee-overlay {
     display: block;
-    background-color: rgba(103, 73, 65, .95);
+    background-color: rgba(30, 20, 9, .95);
     height: 100%;
     a[href="#top"] {
         color: $cream;
@@ -266,7 +266,7 @@ Cream Section
 ***********************/
 
 .sotw-section {
-    background-image: url('../../images/Vinyl_Days.jpg');
+    background-image: url('images/Vinyl_Days.jpg');
     background-size: cover;
 }
 
@@ -278,7 +278,7 @@ Cream Section
 }
 
 .yt-section {
-    background-image: url('../../images/coffee2.jpg');
+    background-image: url('images/coffee2.jpg');
     background-size: contain;
     color: $cream;
 }
@@ -332,10 +332,6 @@ Search
 
 ***********************/
 
-.listing-section {
-    margin-bottom: 30px;
-}
-
 .hl {
     background-image: linear-gradient(-100deg, rgba(255, 255, 255, 0), yellow 85%, rgba(255, 255, 255, 0));
 }
@@ -388,7 +384,7 @@ Blog
 
 .blog-image {
     height: 400px;
-    background-image: url('../../images/Soen.jpg');
+    background-image: url('images/Soen.jpg');
     background-size: cover;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -465,25 +461,25 @@ Blog
 }
 
 .blog-thumbnail-1 {
-    background-image: url('../../images/code_orange_forever.jpg');
+    background-image: url('images/code_orange_forever.jpg');
     background-size: cover;
     color: $cream;
 }
 
 .blog-thumbnail-2 {
-    background-image: url('../../images/Oceans_of_Slumber_Winter.jpg');
+    background-image: url('images/Oceans_of_Slumber_Winter.jpg');
     background-size: cover;
     color: $cream;
 }
 
 .blog-thumbnail-3 {
-    background-image: url('../../images/pain_of_salvation_scarsick.jpg');
+    background-image: url('images/pain_of_salvation_scarsick.jpg');
     background-size: cover;
     color: $cream;
 }
 
 .blog-thumbnail-4 {
-    background-image: url('../../images/Vinyl_Days.jpg');
+    background-image: url('images/Vinyl_Days.jpg');
     background-size: cover;
     color: $cream;
 }
@@ -586,6 +582,18 @@ About Me Contact Card
         list-style-type: none;
     }
 }
+
+/***********************
+
+Radio
+
+***********************/
+
+hr {
+    border-top-color: #7f7f91;
+    margin: 40px 0;
+}
+
 
 
 /***********************
