@@ -42,7 +42,7 @@
                             <li><a href="#blog">MC Blog</a></li>
                             <li><a href="#shows">Shows</a></li>
                             <li><a href="#about">The MC</a></li>
-                            <li> <a data-html="true" data-toggle="popover" data-placement="bottom" data-content="<form action='search_results.html' method='get'><input type='txt' class='form-control search-box' size='35' placeholder='Search for...'/></form>
+                            <li> <a data-html="true" data-toggle="popover" data-placement="bottom" data-content="<form><input type='txt' class='form-control search-box' size='35' placeholder='Search for...'/></form>
                            "><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a> </li>
                         </ul>
                     </nav>
@@ -58,7 +58,8 @@
         <div class="sotw-overlay feature-section">
             <div class="container" id="radio">
                 <div class="row">
-                    <div class="col-sm-7">
+                    <div class="col-sm-7 text-center">
+                       <div class="match-height">
                         <h2 class="cream-header">Radio</h2>
                         <p>Last Updated: Jan 2nd 2017</p>
                         <iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?feed=https%3A%2F%2Fwww.mixcloud.com%2Fmetalandcoffee%2Ffebruary-5th-2017-artist-spotlight-soen%2F&hide_cover=1&light=1" frameborder="0"></iframe>
@@ -136,15 +137,24 @@
                                         <td class="views-field views-field-title">Need:</td>
                                     </tr>
                                 </tbody>
-                            </table>
-                        </div> <a class="btn btn-lg btn-danger" href="radio.html">More...</a> </div>
+                            </table>                           
+                           
+                       </div>                 
+
+                        </div> 
+                       <a class="btn btn-lg btn-danger" href="#">More...</a> </div>
                     <div class="col-sm-5 text-center">
+                       <div class="match-height">
                         <h2 class="cream-header">Song of the Week</h2>
                         <p>Last Updated: Jan 2nd 2017</p>
                         <iframe class="center-block" src="https://embed.spotify.com/?uri=spotify%3Atrack%3A3cWkjlseY4V0GMyLLpBFyq" width="300" height="380" frameborder="0" allowtransparency="true"></iframe> 
-                        <p><span>B</span>ack in 2010, I saw a hardcore show at this place called Secret Art Space. It was located in the little town of Bethlehem (Pennsylvania, USA) and featured the following bands: Hero Destroyed, Iron Thrones, Mose Giganticus...</p>
+                        <div class="sotw-excerpt">
+                        <p><span>B</span>ack in 2010, I saw a hardcore show at this place called Secret Art Space. It was located in the little town of Bethlehem (Pennsylvania, USA) and featured the following bands: Hero Destroyed, Iron Thrones, Mose Giganticus...</p>                         
+                        </div>                                     
+                       </div>
+
                         
-                        <a class="btn btn-lg btn-danger" href="sotw.html">More...</a> 
+                        <a class="btn btn-lg btn-danger" href="#">More...</a> 
 
                         </div>
                 </div>
@@ -203,7 +213,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row text-center"> <a class="btn btn-lg btn-danger" href="blog.html">Read More...</a> </div>
+                <div class="row text-center"> <a class="btn btn-lg btn-danger" href="#">Read More...</a> </div>
             
             </div>
         </div>
@@ -218,12 +228,12 @@
                     <table class="table">
                         <thead>
                             <tr>
-                                <th>DATE</th>
-                                <th>BANDS</th>
-                                <th>VENUE</th>
+                                <th class="text-center">DATE</th>
+                                <th class="text-center">BANDS</th>
+                                <th class="text-center">VENUE</th>
                             </tr>
                         </thead>
-                        <tbody>
+                        <tbody class="text-center">
                             <tr>
                                 <td>01/25/2017</td>
                                 <td>Cult of Luna</td>
@@ -292,7 +302,7 @@
                                     </div>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="submit" class="btn btn-default">Submit</button>
+                                    <button type="submit" class="btn btn-default btn-danger">Submit</button>
                                 </div>
                             </form>
                         </div>

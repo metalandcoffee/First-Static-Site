@@ -20,12 +20,12 @@ $(function () {
 
 
 //For popover search form, this function with submit the form on enter
-$("input").keypress(function(event) {
-    if (event.which == 13) {
-        event.preventDefault();
-        $("form").submit();
-    }
-});
+//$("input").keypress(function(event) {
+//    if (event.which == 13) {
+//        event.preventDefault();
+//        $("form").submit();
+//    }
+//});
 
 //Slow scroll on index.html
 $(function() {
@@ -46,7 +46,6 @@ $(function() {
 
 // Scroll to top button
 $( window ).scroll( function() {
-    console.log($(this).scrollTop());
     if ($(this).scrollTop() > 600) { 
         $('#scroll-top').fadeIn();
     } else {
