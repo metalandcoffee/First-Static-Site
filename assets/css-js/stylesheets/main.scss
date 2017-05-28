@@ -118,6 +118,11 @@ h3#blog-feature {
     line-height: 180%;
 }
 
+.sotw-excerpt {
+    line-height: 2em;
+    margin-top: 20px;
+}
+
 .logo {
     font: 300% $font-main;
     @include drop-shade(.5em, $coffee-light);
@@ -712,12 +717,9 @@ Media Queries
         font-size: 380%;
     }
     .sotw-archive {
-        width: auto;
-        
+        width: auto; 
     }
-}
-
-@media (max-width: 768px) {
-
-
+    .match-height {
+        height: 600px;
+    }
 }

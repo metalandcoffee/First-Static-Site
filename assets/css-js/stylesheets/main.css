@@ -82,6 +82,10 @@ h3#blog-feature {
   font-size: 125%;
   line-height: 180%; }
 
+.sotw-excerpt {
+  line-height: 2em;
+  margin-top: 20px; }
+
 .logo {
   font: 300% "Lobster", cursive;
   text-shadow: 3px 6px 2px rgba(0, 0, 0, 0.5);
@@ -547,6 +551,9 @@ Media Queries
     font-size: 380%; }
 
   .sotw-archive {
-    width: auto; } }
+    width: auto; }
+
+  .match-height {
+    height: 600px; } }
 
 /*# sourceMappingURL=main.css.map */
