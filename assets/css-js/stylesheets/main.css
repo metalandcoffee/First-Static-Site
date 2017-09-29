@@ -32,7 +32,7 @@ General
 #scroll-top {
   color: #ffffff;
   background-color: #000000;
-  transition: all 0.4s ease-in-out;
+  transition: all 0.3s ease-in-out;
   opacity: .6;
   position: fixed;
   right: 15px;
@@ -49,10 +49,10 @@ Typography
 
 ***********************/
 body {
-  font: 150% "Raleway", sans-serif;
+  font: 18px "Raleway", sans-serif;
+  font-weight: 400;
   background-color: #fffef7;
-  color: #1e1409;
-  -webkit-font-smoothing: antialiased; }
+  color: black; }
 
 h1 {
   font-family: "Lobster", cursive;
@@ -65,7 +65,7 @@ h4 {
   margin-top: 20px; }
 
 nav {
-  font-weight: 600; }
+  font-weight: 500; }
   nav a {
     color: #fffef7;
     letter-spacing: 3px;
@@ -114,7 +114,7 @@ h3#blog-feature {
   margin: 40px 0 20px 0;
   background-color: #cc0000;
   letter-spacing: 3px;
-  transition: all 0.5s; }
+  transition: all 0.3s; }
 
 .btn-danger:hover,
 .btn-danger:focus {
@@ -154,12 +154,12 @@ Jumbotron
 .jumbo-blog {
   height: 50px; }
 
-.nav li a {
-  transition: all 0.5s; }
-  .nav li a:hover, .nav li a:focus {
-    background-color: transparent;
-    color: #BEA586; }
-  .nav li a span:not(.glyphicon) {
+.nav li a span {
+  transition: all 0.2s; }
+.nav li a:hover, .nav li a:focus {
+  background-color: transparent;
+  color: #BEA586; }
+  .nav li a:hover span, .nav li a:focus span {
     padding-bottom: 10px;
     border-bottom: solid 3px #fffef7; }
 
@@ -234,11 +234,8 @@ Cream Section
   .playlist-archive table {
     overflow: hidden; }
 
-.single-playlist-archive {
+.playlist-main, .single-playlist-archive {
   max-height: 400px; }
-
-.playlist-main {
-  max-height: 200px; }
 
 #blog-header-feature {
   margin-bottom: 40px; }

@@ -59,7 +59,7 @@ General
 #scroll-top {
     color: #ffffff;
     background-color: #000000;
-    transition: all 0.4s ease-in-out;
+    transition: all 0.3s ease-in-out;
     opacity: .6;
     position: fixed;
     right: 15px;
@@ -81,10 +81,10 @@ Typography
 ***********************/
 
 body {
-    font: 150% $body-font;
+    font: 18px $body-font;
+    font-weight: 400;
     background-color: $cream;
-    color: $coffee;
-    -webkit-font-smoothing: antialiased;
+    color: black;
 }
 
 h1 {
@@ -98,7 +98,7 @@ h4 {
 }
 
 nav {
-    font-weight: 600;
+    font-weight: 500;
     a {
         color: $cream;
         letter-spacing: 3px;
@@ -151,7 +151,7 @@ h3#blog-feature {
     margin: 40px 0 20px 0;
     background-color: rgb(204, 0, 0);
     letter-spacing: 3px;
-    transition: all 0.5s;
+    transition: all 0.3s;
 }
 
 .btn-danger:hover,
@@ -204,15 +204,18 @@ Jumbotron
 .nav {
     li {
         a {
-            transition: all 0.5s;
+            //transition: all 0.3s;
+            span {
+                transition: all 0.2s;
+            }
             &:hover,
             &:focus {
                 background-color: rgba(0, 0, 0, 0);
                 color: $coffee-light;
-            }
-            span:not(.glyphicon) {
-                padding-bottom: 10px;
-                border-bottom: solid 3px $cream;
+                span {
+                    padding-bottom: 10px;
+                    border-bottom: solid 3px $cream;
+                }
             }
         }
     }
@@ -308,12 +311,8 @@ Cream Section
     }
 }
 
-.single-playlist-archive {
+.playlist-main, .single-playlist-archive {
     max-height: 400px;
-}
-
-.playlist-main {
-    max-height: 200px;
 }
 
 #blog-header-feature {
