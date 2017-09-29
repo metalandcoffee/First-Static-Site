@@ -46,8 +46,8 @@ $(function() {
 
 // Scroll to top button
 $( window ).scroll( function() {
-    if ($(this).scrollTop() > 600) { 
-        $('#scroll-top').fadeIn();
+    if ($(this).scrollTop() > 200) { 
+        $('#scroll-top').fadeIn(2000);
     } else {
       $('#scroll-top').fadeOut();
     }
