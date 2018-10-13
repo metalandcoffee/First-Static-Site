@@ -1,8 +1,9 @@
 # metalandcoffee.github.io
+## My first static website from scratch!
 
-Hi, my name is Ebonie Butler and I'm a web developer. This is the second prototype of my first website from scratch. I used HTML, CSS, Javascript (jQuery), Bootstrap Framework, Font Awesome and Flickity CSS to create this website. This website is being used as a blueprint for my first custom Wordpress theme.
+Hi, my name is Ebonie Butler and I'm a full stack developer who specializes in WordPress and Reast.js. This is the first website I've ever created from scratch. I used HTML, CSS, Javascript (jQuery), Bootstrap Framework, Font Awesome and Flickity CSS to create this website.
 
 
-To view this website in the browser, go to http://metalandcoffee.github.io.
+> To view this website in the browser, go to [https://metalandcoffee.github.io](https://metalandcoffee.github.io).
 
-To view the Wordpress theme implementation of this website, go to http://www.metalandcoffee.com/staging.
+> My personal site can be viewed at [https://ebonie.me](https://ebonie.me).
